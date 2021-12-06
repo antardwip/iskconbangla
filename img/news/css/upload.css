@@ -1,0 +1,2050 @@
+/*
+	Generated "oranges" adaptive stylesheet for corz.org
+
+	[upload styles][de-minified output]
+
+	This stylesheet is freely released under the creative commons license:
+	<http://creativecommons.org/licenses/by-nc-sa/1.0/>
+*/
+
+/* reset browser styles.. */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr,
+acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small,
+strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: inherit;
+	font-family: inherit;
+	vertical-align: baseline;
+	background: none;
+}
+html {
+	width: 100% !important;
+	height: 100% !important;
+	padding: 0;
+	margin: 0;
+	font-size: 62.5%; /* 1rem now= 10px, probably */
+}
+body {
+	color: #744619;
+	background-color: #fff7d1;
+	font-family: Tahoma, 'Lucida Grande', Verdana, Trebuchet, Helvetica, sans-serif;
+	font-size: 1.6rem;
+	line-height: normal;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: auto;
+/*	-webkit-text-size-adjust: 100%;*/
+}
+
+/* google ad units scheme test
+#adunit {
+	background-color: #fff7d1 !important;
+} */
+
+/* HTML5ness for poor browsers.. */
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+	display: block;
+}
+img {
+	background-position: center;
+	max-width: 100%;
+	height: auto; /* I'm fairly certain this is you browser's default, anyway */
+}
+.Boxie {
+	cursor: pointer;
+	transition: all 333ms ease-out 0s;
+}
+.bordered {
+	border: 1px solid #7a5407;
+
+}
+
+abbr, acronym {
+	border-bottom: .1rem dotted #000;
+	cursor: help;
+}
+strong {
+	font-weight: bold;
+}
+em, .italics {
+	font-style: italic;
+	padding-right: .3rem;
+}
+blockquote::before, blockquote::after, q::before, q::after {
+	content: "";
+}
+blockquote, q {
+	font-size: inherit;
+	quotes: "" "";
+}
+blockquote, ul, ol {
+	margin: .75rem .75rem .75rem 1.5rem;
+}
+
+/* handy structural "blockquote" block */
+.block-quote {
+	margin: 0 12% 0 4%;
+	text-align: justify;
+}
+
+ol, ul, dl {
+	margin-left: 4rem;
+}
+ol li {
+	list-style: decimal outside;
+}
+ul li {
+	list-style: square outside url("/blog/inc/themes/original/images/ulio.png");
+}
+
+.ul-header li {
+	margin: .3rem 0;
+
+}
+
+p, fieldset, table {
+	margin-top: 1.7rem;
+	margin-bottom: 1rem;
+}
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+
+a {
+	background: transparent;
+}
+/*a:focus {*/
+/*	outline: 1px solid black;*/
+/*}*/
+/*a:active, a:hover {*/
+/*	outline: 0;*/
+/*}*/
+
+:link {
+	transition: all 100ms ease-out 0s;
+	color: #d18207;
+	text-decoration: none;
+}
+:visited {
+	color: #a96a04;
+	text-decoration: none;
+}
+a:hover {
+	color: #664208;
+	text-decoration: underline;
+}
+a:active {
+	color: #7f6208;
+	text-decoration: none;
+}
+:focus {
+	outline: 0;
+}
+
+
+/* special cursors for special links */
+
+/* new tab/window */
+a[onclick^=window] {
+	cursor: crosshair;
+}
+/* pop-up windoid */
+a[onclick^=Open] {
+	cursor: url("/img/cursor/Pop-Up_Cursor+arrow+windoid_32px.png") 21 20, move;
+}
+.js-link {
+	cursor: move;
+}
+
+
+small {
+	font-size: 75%;
+}
+big {
+	font-size: 125%;
+}
+
+tt {
+	font-family: 'Lucida Console', 'Courier New', Consolas, ProFontWindows, monospace;
+	color: #A07A47;
+}
+code, .code {
+	font-family: 'Lucida Console', 'Courier New', Consolas, ProFontWindows, monospace;
+	color: #8c6308;
+}
+pre, .pre {
+	tab-size: 4 !important;
+	-moz-tab-size: 4 !important;
+	-o-tab-size: 4 !important;
+	white-space: pre-wrap;
+	font-family: 'Lucida Console', 'Courier New', Consolas, ProFontWindows, monospace;
+	color: #7a5407;
+	text-align: left;
+}
+.strike-through {
+	text-decoration:line-through;
+}
+
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .h7, .h8, .h9 { /* Opera! */
+	background-color: inherit;
+	font-family: Tahoma, 'Lucida Grande', Verdana, Trebuchet, Helvetica, sans-serif;
+	font-weight: 800;
+	padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	display: block;
+	margin: 2rem 0 1.5rem;
+}
+
+h1, .h1 {
+	color: #eca004;
+/*	font-size: 220%;*/
+	font-size: 3.52rem;
+}
+section h1 {
+	color: #eca004;
+/*	font-size: 175%;*/
+	font-size: 2.8rem
+}
+h2, .h2 {
+	color: #F5A90A;
+/*	font-size: 175%;*/
+	font-size: 2.8rem;
+}
+h3, .h3 {
+	color: #F5A90A;
+/*	font-size: 150%;*/
+	font-size: 2.4rem;
+}
+h4, .h4 {
+	color: #F5A90A;
+/*	font-size: 133%;*/
+	font-size: 2.128rem;
+}
+h5, .h5 {
+	color: #F5A90A;
+/*	font-size: 125%;*/
+	font-size: 2rem;
+}
+h6, .h6 {
+	color: #F5A90A;
+/*	font-size: 120%;*/
+	font-size: 1.92rem;
+}
+.h7, .h8, .h9 {
+	color: #F5A90A;
+	font-size: 1.76rem;
+}
+.h7 {
+	font-size: 1.76rem;
+}
+
+.h8 {
+	font-size: 1.6rem;
+}
+
+.h9 {
+	font-size: 1.44rem;
+}
+
+
+nav h1, aside h1 {
+	position: absolute !important;
+	clip: rect(1px, 1px, 1px, 1px);
+}
+nav ul {
+	padding: 0;
+	margin: 0;
+}
+nav ul li { list-style: none; }
+
+
+hr {
+	-webkit-box-sizing: content-box !important;
+	-moz-box-sizing: content-box !important;
+	box-sizing: content-box !important;
+	text-align: left;
+	height: 0;
+}
+
+/* main content block on all pages */
+.content {
+	position: relative;
+	width: 67%;
+	max-width: 1024px;
+	margin: 8rem auto 0;
+	z-index: 10;
+}
+
+/* for content blocks */
+.super-wide {
+	margin-left: 2rem;
+	margin-right: 2rem;
+}
+
+.narrowed {
+	width: 50%;
+}
+
+#tool {
+	margin: 2rem auto 0;
+}
+
+.wide {
+	width: 81%;
+	max-width: 1280px;
+}
+
+/* superscript/subscript - without messing with line-height */
+sup, .sup, sub {
+    position: relative;
+    height: 0;
+    line-height: 1;
+    vertical-align: baseline;
+	font-size: 80%;
+}
+
+sub { top: .6rem; }
+sup, .sup { bottom: .5rem; }
+
+
+
+
+/* handy for headers */
+.top, h1:nth-child(1), .semi-sub {
+	margin-top: 0;
+}
+/* for sub headers */
+.sub {
+	margin-top: -0.5rem;
+}
+.super-sub {
+	margin-top: -1.5rem;
+	margin-bottom: 3rem;
+}
+ /* for inside the head tag - only for SHORT phrases (wraps badly!) */
+.small-sub {
+	position: relative;
+	top: -1rem;
+	font-size: 66%;
+}
+
+
+/* for links that are only information, no HREF */
+.info {
+	color: #744619;
+}
+.info:hover {
+	color: #a96a04;
+}
+
+.byline {
+	padding: 0;
+	margin: 0;
+	color: #d18207;
+	font-size: 80%;
+}
+
+.warning {
+	color: #fe3a00;
+	font-weight: bold;
+}
+
+/* for chunks of active text we want to look like regular text */
+.bodytext {
+	color: #744619;
+}
+
+
+/* hover over images */
+
+.dim, .bright:hover {
+	transition: all 150ms ease-out 0s;
+/*	filter: alpha(opacity=90);*/
+	-khtml-opacity: 0.90;
+	opacity: 0.90;
+}
+.dimmed {
+	transition: all 150ms ease-out 0s;
+/*	filter: alpha(opacity=80);*/
+	-khtml-opacity: 0.80;
+	opacity: 0.80;
+}
+.dimmer {
+	transition: all 150ms ease-out 0s;
+/*	filter: alpha(opacity=63);*/
+	-khtml-opacity: 0.63;
+	opacity: 0.63;
+}
+.dimmest {
+	transition: all 150ms ease-out 0s;
+/*	filter: alpha(opacity=45);*/
+	-khtml-opacity: 0.45;
+	opacity: 0.45;
+}
+.dim:hover, .dimmed:hover, .dimmer:hover, .dimmest:hover, .bright {
+/*	filter: alpha(opacity=100);*/
+	-khtml-opacity: 1;
+	opacity: 1;
+}
+
+.active {
+	cursor: move;
+}
+
+/* glows and shadows */
+
+.shadowed {
+	box-shadow: .5rem .5rem 1rem .1rem rgba(0,0,0,.33);
+}
+
+.hidden {
+	display: none;
+}
+
+.text-center {
+	text-align: center;
+}
+.block-center {
+	margin: 0 auto;
+}
+.centered {
+	text-align: center;
+	margin: 0 auto;
+}
+
+.content ul {
+	list-style: square outside url("/blog/inc/themes/original/images/ulio.png");
+}
+
+.breakable {
+	word-wrap: break-word; /* or "normal" */
+	overflow-wrap: break-word;
+}
+.indented { margin-left: 2rem; }
+.extra-indented { margin-left: 4rem; }
+.super-indented { margin-left: 6rem; }
+.text-right { text-align: right; }
+.text-left {
+	text-align: left;
+	margin-left: .2rem;
+}
+
+
+
+/* pulls title images way left, e.g. corzoogle pages */
+.neg-indent {
+	position: relative;
+	left: -2rem;
+}
+.neg-indent-mega {
+	position: relative;
+	left: -6rem;
+	bottom: -2rem;
+}
+
+
+/* pop-up title tips.. */
+.tip {
+	color: #a96a04;
+}
+
+.js-link {
+	cursor: move;
+}
+
+/*.windoid {*/
+/*	cursor: url("/img/cursor/Arrow_Pop-Up-Windows_Cursor_32px.png") 22 23, move;*/
+/*	cursor: url("/img/cursor/Pop-Up-Windows_Cursor_32px.png") 27 26, move;*/
+/*	cursor: url("/img/cursor/Pop-Up_Cursor+arrow+windoid_32px.png") 21 20, move;*/
+/*}*/
+
+/*
+
+	handy spacers
+						*/
+
+
+.space-big, .space-half, .space-quarter, .space-small, .space-tiny, .space-minute {
+	overflow: hidden; /* prevent IE expanding the container */
+	display: block;
+}
+.index-break, .clear, .clear-big, .clear-half, .clear-quarter, .clear-small, .clear-tiny, .clear-minute {
+	overflow: hidden;
+	margin: 0;
+	clear: both;
+	width: 100%;
+	display: block;
+}
+
+.space-big { height: 20rem; }
+.space-half { height: 10rem; }
+.space-quarter { height: 5rem; }
+.space-small { height: 2.5rem; }
+.space-tiny { height: 1rem; }
+.space-minute { height: .25rem; }
+
+.clear-big { height: 20rem; }
+.clear-half { height: 10rem; }
+.clear-quarter { height: 5rem; }
+.clear-small, .index-break { height: 2.5rem; }
+.clear-tiny { height: 1rem; }
+.clear-minute { height: .25rem; }
+.clear { height: .001rem; font-size: 0;}
+
+.clear-right {
+	clear: right;
+	height: 0;
+}
+.clear-left {
+	clear: left;
+	height: 0;
+}
+
+
+/* just handy */
+.justify { text-align: justify; }
+.smaller { font-size: smaller; }
+.larger { font-size: larger; }
+.bigger { font-size: larger; }
+.small { font-size: small; }
+.x-small { 	font-size: x-small; }
+.big, .large, big { font-size: large; }
+.huge { font-size: x-large; }
+.massive { font-size: 10rem; }
+.bold { font-weight: bold; }
+.vbold { font-weight: 800; }
+.bolder { font-weight: bolder; }
+.red { color: #FF0000; }
+.yellow { color: #FFFF00; }
+.orange { color: #ffb300; }
+.pink { color: #FF00FF; }
+.green { color: #009900; }
+.purple { color: #cc00ff; }
+.grey { color: #B5B5B5; }
+.black { color: #000000; }
+
+
+.lo-fi {
+	color: #eca004;
+	background-color: transparent;
+	position: absolute;
+	top: 5rem;
+	text-align: center;
+	width: 100%;
+	font-size: 150%;
+}
+
+
+/* for the first paragraph in many pages */
+.intro-block {
+	width: 75%;
+}
+
+.fill {
+	width: 100%;
+}
+.block-narrow {
+	width: 66%;
+}
+.block-thin {
+	width: 50%;
+}
+
+.mbot { margin-bottom: 1.6rem; }
+.mtop { margin-top: 1.6rem; }
+
+.ul-narrow {
+	width: 66%;
+	font-size: 90%;
+}
+.ul-spaced li { margin-bottom: 2rem; }
+
+.urltxt {
+	font-family: 'Trebuchet MS', Trebuchet, Verdana, 'Lucida Grande', Tahoma, sans-serif;
+	color: #c8860d;
+
+}
+
+
+/*
+
+	LEFT/RIGHT + COLUMNS
+								*/
+
+
+
+/* stackable half-width columns */
+.half-size {
+	float: left;
+	width: 50%;
+	margin: 0;
+	padding: 0;
+	outline: 0;
+}
+
+
+/* two-columns.. */
+.two-column {
+	width: 100%;
+	clear: right;
+}
+
+/* for if you need the entire row to highlight on hover, use this.. */
+.two-column-row {
+	width: 100%;
+	clear: right;
+	padding: 0;
+	float: right;
+}
+.two-column-row:hover {
+	background-color: #ffffff;
+}
+
+.left, .left-column, .left-title {
+	position: relative;
+	float: left;
+	padding: 0;
+}
+.left-column {
+	padding: 0;
+	width: 45%;
+}
+.right, .right-column, .right-title {
+	position: relative;
+	padding: 0;
+	float: right;
+}
+.right-column {
+	padding: 0;
+	width: 45%;
+}
+
+.left-column, .right-column {
+	text-align: justify;
+}
+.left-column {
+	padding: .5rem 2rem .5rem .5rem;
+}
+.right-column {
+	padding: .5rem .5rem .5rem 2rem;
+}
+
+.narrow-column {
+	width: 22%;
+}
+.wide-column {
+	width: 72%;
+}
+
+/*
+	For larger "title" images that want more space around them.
+	These images will also automatically scale down on smaller screens
+*/
+
+.left-img, .left-img-title, .left-title, .left-img-sub {
+	float: left;
+}
+.left-img-title, .left-title {
+	margin: 2rem 2rem .15rem 0;
+}
+.left-img	 {
+	margin: .5rem 2rem .5rem 0;
+}
+
+.right-img, .right-img-title, .right-title, .right-img-sub  {
+	float: right;
+	text-align: right;
+}
+.right-img-title, .right-title {
+	margin: 2rem 0 .5rem 2rem;
+}
+.right-img {
+	margin: .5rem 0 .5rem 2rem;
+
+}
+.img-sub, .right-img-sub, .left-img-sub {
+	color: #F5A90A;
+	font-size: 70%;
+}
+
+.right-text {
+	text-align: right;
+}
+
+.far-right {
+	float: right
+}
+
+.thumbnail {
+	margin: .5rem;
+}
+
+.fancy-thumb {
+	outline: .2rem solid #fbb627;
+	border: .6rem solid #ffffff;
+	outline-offset: -.2rem;
+}
+
+.fancy-thumb:hover {
+	outline: .2rem solid #2a2a2a;
+}
+
+.smallcap {
+	font-variant: small-caps;
+}
+
+
+
+.up-arrow, #top-of-page {
+	transition: all 100ms ease-out 0s;
+	display: inline-block;
+	height: 4.8rem;
+	width: 4.8rem;
+/*	filter: alpha(opacity=50);*/
+	-khtml-opacity: 0.50;
+	opacity: 0.50;
+}
+
+#top-of-page {
+	display: none;
+	position: fixed;
+	top: 2rem;
+	left: 10rem;
+	z-index: 300;
+}
+
+.previous a:hover .up-arrow, .next a:hover .up-arrow, .up-arrow:hover {
+/*	filter: alpha(opacity=100);*/
+	-khtml-opacity: 1;
+	opacity: 1;
+}
+
+.rotate-right {
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-o-transform: rotateZ(90deg);
+	transform: rotate(90deg);
+	float: right;
+	margin-left: .5rem;
+}
+
+.rotate-left {
+	margin-right: .5rem;
+	-webkit-transform: rotate(270deg);
+	-moz-transform: rotate(270deg);
+	-o-transform: rotateZ(270deg);
+	transform: rotate(270deg);
+}
+
+#goto-previous, #goto-next  {
+/*	display: block;*/
+	margin: .5rem 2rem;
+	clear: both;
+}
+#goto-next {
+	display: block;
+	text-align: right;
+}
+
+
+
+/*
+
+	Pajamas Security..
+
+							*/
+
+.auth-container {
+	width: 32rem;
+	margin-left: 40%;
+}
+.auth-form {
+	width: 100%;
+}
+.auth-text {
+	position: relative;
+	top: -0.2rem;
+	font-size: large;
+	font-weight: bold;
+}
+.auth-note {
+	font-size: x-small;
+}
+#pajamas_logout {
+	position: fixed;
+	left: .4rem;
+	bottom: .6rem;
+	z-index: 101;
+}
+
+.pj {
+	margin: 0 35% 0 35%;
+}
+.pj-title {
+	position: relative;
+	bottom: -0.5em;
+}
+.pj-note {
+	margin: .6em 1em 0 0;
+}
+
+
+
+
+/*
+	Pay Buttons
+	Damn! These make you wanna CLICK!
+										*/
+.pay-button, .pay-button-small {
+	transition: all 200ms ease-out 0s;
+	/*
+	Top-bottom - 3 stops - for buttons (and the distro machine box - a BIG button! send "top", "middle", "bottom", and "cutoff")
+	@@button-gradient(top=#fff7d1,middle=#fcce72,bottom=#fceca1,cutoff=85)@@
+	*/
+	background-image: -moz-linear-gradient(top, #fff7d1 0%, #FFC44D 85%, #fbb627 100%);
+	background-image: -ms-linear-gradient(top, #fff7d1 0%, #FFC44D 85%, #fbb627 100%);
+	background-image: -o-linear-gradient(top, #fff7d1 0%, #FFC44D 85%, #fbb627 100%);
+	background-image: -webkit-linear-gradient(top, #fff7d1 0%, #FFC44D 85%, #fbb627 100%);
+	background-image: linear-gradient(to bottom, #fff7d1 0%, #FFC44D 85%, #fbb627 100%);
+/*	filter: alpha(opacity=80);*/
+	-khtml-opacity: 0.80;
+	opacity: 0.80;
+}
+.pay-button:hover, .pay-button-small:hover {
+	position: relative;
+/*	transition: all 200ms ease-out 0s;*/
+	z-index: 300;
+/*	filter: alpha(opacity=100);*/
+	-khtml-opacity: 1;
+	opacity: 1;
+}
+
+.pay-button {
+	border: .5rem solid #fbac37;
+	border-radius: 1rem;
+	box-shadow: 1rem 1rem .9rem -0.8rem rgba(0,0,0,.33);
+}
+.pay-button:hover {
+	box-shadow: 2rem 1.5rem 1.9rem -.9rem rgba(0,0,0,.33);
+}
+.pay-button-small {
+	border: .2rem solid #fbac37;
+	border-radius: .5rem;
+	box-shadow: .5rem .5rem .45rem -.4rem rgba(0,0,0,.33);
+}
+.pay-button-small:hover {
+	box-shadow: 1.4rem 1.2rem 1.2rem -.6rem rgba(0,0,0,.33);
+}
+
+
+
+/* Software Licensing */
+
+#licenses {
+	width: 72%;
+	margin-left: 6rem;
+	font-size: 120%;
+}
+
+
+#licenses .two-column-row {
+	padding: .5rem;
+}
+/* we could save markup and use .left, but hey! */
+#licenses .two-column-row:hover {
+	background-color: inherit;
+	color: #d18207;
+	text-shadow: 0 0 1rem #ffffff;
+	transition: all .2s ease 0s;
+}
+
+.license-shirt { margin-bottom: 2em; }
+
+.payment-buttons {
+	float: right;
+	width: 28rem;
+	margin-right: .5rem;
+}
+
+.payment-buttons form {
+	display: inline-block;
+	width: 13rem;
+}
+
+.wire-transfer input {
+	margin: 0 1rem;
+}
+
+.wire-transfer-details {
+	font-family: 'Lucida Console', 'Courier New', Consolas, ProFontWindows, monospace;
+	font-size: 120%;
+	width: 62rem;
+	margin: 0 auto;
+}
+
+
+.property {
+	float: left;
+	width: 44%;
+	margin-bottom: .5rem;
+}
+.value {
+	float: right;
+	width: 55%;
+	margin-bottom: .5rem;
+	font-weight: 600;
+}
+
+.key-form {
+	font-weight: 600;
+	font-size: 110%;
+	width: 64rem;
+	margin: 10rem auto 0;
+}
+.license-details, .enter-details {
+	margin: 0 0 2em 1em;
+	line-height: 120%;
+}
+.license-details {
+	font-family: 'Lucida Console', 'Courier New', Consolas, ProFontWindows, monospace;
+	white-space: pre;
+	margin-top: -2rem;
+}
+#do-it {
+	margin: 2rem auto;
+	font-size: 2.5rem;
+	height: 4rem;
+	text-align: center;
+	width: 100%;
+}
+
+.license-input input, .license-input select {
+	margin-bottom: 1rem;
+	width: 32rem;
+}
+.license-input select {
+	width: 16.5em;
+}
+.lic-input {
+	float: right;
+}
+
+
+.bordered3 {
+	border: 3px solid #7a5407;
+}
+
+
+/*
+
+	Smaller Screens..
+							*/
+
+@media screen and (max-width: 920px) {
+	.content {	/* move this to 800!*/
+		margin-top: 11rem;
+		padding-right: 2rem;
+		max-width: 80%;
+	}
+	.auth-container {
+		margin: 0 auto;
+	}
+	.half-size {
+		float: none;
+		width: 100%;
+	}
+
+	#top-of-page {
+		width: 3rem;
+		background-size: contain;
+		top: .75rem;
+		left: .5rem;
+	}
+
+	.narrowed {
+		width: 100%;
+	}
+
+	footer {
+		margin-top: 4rem;
+	}
+
+}
+
+
+
+@media screen and (max-width: 800px) {
+	body {
+		font-size: 2.1rem;
+	}
+	.content {
+		clear: both;
+		margin-top: 11rem;
+		padding: 0;
+		width: 98%;
+	}
+	.intro-block {
+		width: 100%;
+	}
+	.content p {
+		text-align: justify;
+	}
+
+	.narrow {
+		max-width: 100%;
+		margin-left: auto;
+	}
+	.two-column, .two-column-row, .left-column, .right-column, .right, .left, .narrow-column, .wide-column {
+		width: 100%;
+		clear: both;
+		float: none;
+		text-align: inherit;
+		padding: 0;
+		margin: 0;
+	}
+	.right-column {
+		margin-top: 5rem;
+	}
+	.index-break {
+		display: none;
+	}
+	.img-sub, .right-img-sub, .left-img-sub {
+		font-size: 50%;
+	}
+
+	.neg-indent, .neg-indent-mega {
+		left: 0;
+		bottom: 0;
+	}
+	footer {
+		margin-top: 8rem;
+	}
+	pre {
+/*		overflow: auto;*/
+		font-size: small;
+		white-space: pre-wrap ;
+	}
+
+	#gd-verify-image {
+		width: 50%;
+	}
+
+}
+
+
+
+@media screen and (max-width: 640px) {
+
+	.left-img, .left-img-title, .right-img, .right-img-title, .left-title, .right-title {
+		clear: both;
+		float: none;
+		text-align: inherit;
+		padding: 0;
+		margin: 2rem auto;
+	}
+
+	/* for images we want scaled to small screens */
+	.scale, .right-img-title, .left-img-title {
+		background-size: 100%;
+		width: 94%;
+	}
+	.massive {
+		font-size: 5rem;
+	}
+	.noscale {
+		background-size: auto;
+		width: auto;
+	}
+	#gd-verify-image {
+		width: 100%;
+	}
+}
+
+
+
+.debug {
+	width: 80rem;
+	margin: 4rem auto;
+}
+
+
+body {
+	background-position: left bottom, left top;
+	background-repeat: no-repeat, repeat-x;
+	background-attachment: fixed, fixed;
+}
+
+
+@font-face {
+	font-family: "DejaVuSans";
+	src: url("/inc/fonts/DejaVuSans-Bold-webfont.eot");
+	src: url("/inc/fonts/DejaVuSans-Bold-webfont.eot?#iefix") format("embedded-opentype"),
+	url("/inc/fonts/DejaVuSans-Bold-webfont.woff") format("woff"),
+	url("/inc/fonts/DejaVuSans-Bold-webfont.ttf") format("truetype"),
+	url("/inc/fonts/DejaVuSans-Bold-webfont.svg#webfontDSbtRiqx") format("svg");
+}
+
+
+
+/* the original HUGE variant isn't used at corz.org */
+.tools {
+	position: relative;
+	font-family: "DejaVuSans", Tahoma, 'Lucida Grande', Verdana, Trebuchet, Helvetica, sans-serif;
+	z-index: 50;
+}
+
+
+#home-link, #blog-link, #dev-link, #audio-link, #arc-link, #img-link, #server-link, #net-link, #win-link, #words-link, #me-link, #prefs-link {
+	color: #fff7d1;
+	text-shadow:
+		0 0 .5rem #d39e2f,
+		0 0 2.1rem #fcce72,
+		0 0 3.3rem #fceca1;
+}
+#home-link:hover, #blog-link:hover, #dev-link:hover, #audio-link:hover, #arc-link:hover, #img-link:hover, #server-link:hover, #net-link:hover, #win-link:hover, #words-link:hover, #me-link:hover, #prefs-link:hover {
+	color: #faae3d;
+	text-decoration: none;
+	text-shadow:
+		0 0 2rem #fff9f0,
+		0 0 3rem #ffe097,
+		0 0 7.5rem #fccc67;
+}
+
+
+
+.toplinks {
+	position: absolute;
+	font-size: 1.4rem;
+	top: 0.8rem;
+	right: 1rem;
+	z-index: 99;
+}
+.toplinks li {
+	display: inline;
+}
+.toplinks li:not(:last-child)::after {
+	content: " •";
+}
+
+.toplinks li a {
+	color: #c48206;
+}
+.toplinks li a:visited {
+	color: #d28a04;
+}
+.toplinks li a:hover {
+	color: #ffffff; /* only color variable guaranteed to be white! */
+}
+
+.auto-section {
+	position: absolute;
+	font-size: 1.1rem;
+	top: 3.5rem;
+	right: .9rem;
+	text-align: right;
+	padding-left: 5rem;
+	z-index: 99;
+}
+.auto-section-title {
+	font-weight: 600;
+	font-size: 1.3rem;
+	color: #c48206;
+	padding: 0.25rem 0 0.33rem;
+}
+.auto-section-links a {
+	display: block;
+}
+
+
+/* menu switches here */
+@media screen and (max-width: 920px) {
+
+	.toplinks {
+		top: 6.5rem;
+		right: auto;
+		margin: 0 5%;
+		width: 100%;
+		text-align: center;
+		font-size: 1.5rem;
+		max-width: 90%;
+	}
+
+	.auto-section {
+		position: relative;
+		text-align: left;
+		top: 2rem;
+		right: auto;
+		padding: 0;
+		margin: 2rem auto 4rem;
+		width: 95%;
+		border-top: .1rem #F5A90A dashed;
+		border-bottom: .1rem #F5A90A dashed;
+		padding: 0.25rem 0 1rem;
+	}
+	.auto-section-links, #pagelink-totop {
+		display: inline;
+	}
+	.auto-section-links a {
+		display: inline;
+	}
+	.auto-section-links a:not(:last-of-type)::after {
+		content: " •";
+	}
+}
+
+
+@media screen and (max-width: 800px) {
+	.toplinks {
+		top: 6.75rem;
+	}
+}
+
+
+
+
+input[type=submit], input[type=button], input[type=reset], input[type=checkbox], select, label, .pointer, input[type=file] {
+	transition: all 100ms ease-out 0s;
+	cursor: pointer;
+	-webkit-touch-callout: none;
+}
+
+textarea, input, label, select, button {
+/*	-ms-box-sizing: content-box !important;*/
+	-webkit-box-sizing: border-box !important;
+	-moz-box-sizing: border-box !important;
+	box-sizing: border-box !important;
+	font-family: inherit;
+	margin: 0;
+	padding: 0;
+	outline: none;
+	text-transform: none;
+}
+
+textarea {
+	white-space: pre-wrap;
+	font-family: 'Lucida Console', 'Courier New', Consolas, ProFontWindows, monospace;
+	vertical-align: top; /* 2 */
+	tab-size: 4 !important;
+	-o-tab-size: 4 !important;
+	-moz-tab-size: 4 !important;
+}
+
+/* nice, slightly rounded controls */
+input[type=text], input[type=number], input[type=email], input[type=password], input[type=submit], input[type=button], input[type=reset], input[type=checkbox], select, input[type=file] {
+	border-radius: .3rem;
+	border: .2rem solid transparent;
+	vertical-align: middle;
+	height: 3.2rem;
+	font-size: 120%;
+}
+input[type=text], input[type=number], input[type=email], input[type=password], input[type=submit], input[type=button], input[type=reset], input[type=checkbox], input[type=file] {
+	padding: 0 .3rem;
+}
+
+select {
+/*	height: 2.8rem;*/
+	vertical-align: middle;
+	padding:  0.4rem 0.5rem 0 0;
+	text-align: center;
+	text-align: left;
+}
+
+select option {
+	margin-right: 1rem;
+	right: 3rem;
+}
+
+input[type=text], input[type=number], input[type=email], input[type=password], textarea, select {
+	border: .2rem solid #f9e39b;
+	font-family: 'Lucida Console', 'Courier New', Consolas, ProFontWindows, monospace;
+}
+
+input[type=text], input[type=number], input[type=email], input[type=password], select {
+	text-indent: .5rem;
+
+}
+
+input[type=email]:invalid  {
+	color: #fe3a00;
+}
+
+
+
+input[type=submit], input[type=button], input[type=reset], input[type=file] {
+	font-weight: bold;
+	border: .2rem solid #d27e2a; /* looks lovely in IE8! */
+	background-color: #d27e2a;
+	color: #fff7d1;
+}
+
+input[type=submit]:hover, input[type=button]:hover, input[type=reset]:hover, input[type=file]:hover {
+	background-color: #f8a325;
+}
+
+input[type=submit]:active, input[type=button]:active, input[type=reset]:active, input[type=file]:active {
+	outline: none;
+	box-shadow:  0 0 .4rem .3rem #f9e39b;
+}
+
+input[type=text]:focus, input[type=email]:focus, input[type=password]:focus {
+	outline: none;
+	box-shadow: 0 0 1rem #f9e39b;
+}
+
+/* licensing model chooser */
+input.big-butt {
+	cursor: move;
+	transition: all 200ms ease-out 0s;
+	height: 5rem;
+	font-size: 200%;
+	border: none;
+	border-radius: .66rem;
+	/*
+	Top-bottom - 3 stops - for buttons (and the distro machine box - a BIG button! send "top", "middle", "bottom", and "cutoff")
+	@@button-gradient(top=#fff7d1,middle=#fcce72,bottom=#fceca1,cutoff=85)@@
+	*/
+	background-image: -moz-linear-gradient(top, #FFC44D 0%, #FFC44D 10%, #fbb627 100%);
+	background-image: -ms-linear-gradient(top, #FFC44D 0%, #FFC44D 10%, #fbb627 100%);
+	background-image: -o-linear-gradient(top, #FFC44D 0%, #FFC44D 10%, #fbb627 100%);
+	background-image: -webkit-linear-gradient(top, #FFC44D 0%, #FFC44D 10%, #fbb627 100%);
+	background-image: linear-gradient(to bottom, #FFC44D 0%, #FFC44D 10%, #fbb627 100%);
+	box-shadow: .5rem .5rem .45rem -.4rem rgba(0,0,0,.33);
+}
+
+
+input.big-butt:hover {
+	/*
+	Top-bottom - 3 stops - for buttons (and the distro machine box - a BIG button! send "top", "middle", "bottom", and "cutoff")
+	@@button-gradient(top=#fff7d1,middle=#fcce72,bottom=#fceca1,cutoff=85)@@
+	*/
+	background-image: -moz-linear-gradient(top, #f8a325 0%, #d27e2a 90%, #d27e2a 100%);
+	background-image: -ms-linear-gradient(top, #f8a325 0%, #d27e2a 90%, #d27e2a 100%);
+	background-image: -o-linear-gradient(top, #f8a325 0%, #d27e2a 90%, #d27e2a 100%);
+	background-image: -webkit-linear-gradient(top, #f8a325 0%, #d27e2a 90%, #d27e2a 100%);
+	background-image: linear-gradient(to bottom, #f8a325 0%, #d27e2a 90%, #d27e2a 100%);
+	box-shadow: 1.4rem 1.2rem 1.2rem -.6rem rgba(0,0,0,.33);
+}
+
+
+/*
+	Fancy CSS3 Checkboxes
+	Only used when specified (by class .check-box & .checkbox-label)
+*/
+input[type=checkbox].check-box {
+	display: none;
+}
+input[type=checkbox].check-box + label.checkbox-label {
+	padding-left: 2rem;
+	height: 1.6rem;
+	display: inline-block;
+	line-height: 1.6rem;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	font-size: 1.2rem;
+	vertical-align: middle;
+	cursor: pointer;
+	transition: none;
+}
+input[type=checkbox].check-box:checked + label.checkbox-label {
+	background-position: 0 -1.6rem;
+}
+label.checkbox-label {
+	background-image:url("/img/schimages/checkbox-oranges.png");
+}
+
+
+
+@media screen and (max-width: 800px) {
+
+	input[type=text], input[type=number], input[type=email], input[type=password], input[type=submit], input[type=button], input[type=reset], input[type=file] {
+		clear: both;
+		float: none;
+		margin: 0 auto .5rem;
+		width: 100%;
+		height: 4.8rem;
+		text-align: center;
+		font-size: 150%;
+	}
+
+	input[type=text]:focus, input[type=email]:focus {
+		border-color: #f9e39b;
+		box-shadow: 0 0 1.5rem #f9e39b;
+	}
+
+	textarea {
+		font-size: 150%;
+	}
+}
+
+
+
+::selection {
+	background: #000000;
+	color: #ffea95;
+}
+::-moz-selection {
+	background: #000000;
+	color: #ffea95;
+}
+
+/* textareas always get white-on-black selections, regadless of current scheme */
+textarea::selection {
+	background: black;
+	color: white;
+}
+textarea::-moz-selection {
+	background: black;
+	color: white;
+}
+
+
+
+
+/* HUGE (simple) User scheme controls */
+
+
+#user-scheme-controls {
+	margin: 5rem auto 0;
+}
+.user-submit-form {
+	float: left;
+	margin-left: 1rem;
+	margin-bottom: 1rem;
+}
+input.user-scheme-submit {
+	height: 10rem;
+	font-size: 350%;
+	padding: 0 1rem;
+}
+
+/* mini version - smaller user-selection buttons - for underfooter */
+#user-scheme-mini #user-scheme-controls {
+	margin: 0;
+}
+
+#user-scheme-mini .user-submit-form {
+	float: left;
+	margin: 0 .4rem 0 0;
+}
+
+#user-scheme-mini input.user-scheme-submit {
+	height: 1.8rem;
+	font-size: .7rem;
+	padding: 0 .1rem;
+}
+
+
+/* slightly different version for admin */
+
+.admin-user {
+	position: fixed;
+	top: 6rem;
+	left: 1rem;
+	margin: 0;
+	width: 12rem;
+}
+.admin-user #user-scheme-controls {
+	margin: 0;
+}
+.admin-user .user-submit-form  {
+	margin: 1rem 1rem 0 0;
+}
+.admin-user input.user-scheme-submit {
+	height: 5rem;
+	font-size: 100%;
+	padding: 0 .5rem;
+	width: 8rem;
+}
+
+
+
+#user-scheme-controls li {
+	list-style: none;
+}
+
+
+@media screen and (max-width: 640px) {
+
+
+	#user-scheme-mini input.user-scheme-submit {
+		height: 3rem;
+		font-size: 2rem;
+/*		padding: 0;*/
+	}
+
+	#user-scheme-mini .user-submit-form {
+		float: left;
+		margin: 0 .6rem 0 0;
+	}
+}
+
+
+
+.footer {
+	position: relative;
+	bottom: inherit;
+	text-align: center;
+	width: 100%;
+	margin-top: 55px;
+	font-size: 1rem;
+	color: #DE7008;
+	z-index: auto;
+	bottom: -1.66rem;
+}
+.footer:first-child {
+/*	filter: alpha(opacity=99);*/
+	-khtml-opacity: 0.99;
+	opacity: 0.99;
+}
+#footer-left {
+	position: relative;  /* lifts it up back in line with middle section */
+	float: left;
+	margin-left: .5rem;
+	bottom: 1.9rem;
+}
+
+#valid-html, #valid-css {
+	position: relative;
+/*	filter: alpha(opacity=50);*/
+	-khtml-opacity: 0.50;
+	opacity: 0.50;
+	bottom: -.5rem;
+}
+#valid-html:hover, #valid-css:hover {
+/*	filter: alpha(opacity=100);*/
+	-khtml-opacity: 1;
+	opacity: 1;
+}
+
+#footer-right {
+	position: relative;
+	float: right;
+	margin-right: .5rem;
+	bottom: 1.9rem;
+}
+
+#footer-middle {
+	margin-bottom: .5rem;
+}
+
+#search {
+	transition: all 200ms ease-out 0s;
+	display: inline-block;
+	width: 36px;
+	height: 36px;
+	margin: 0 auto;
+	background: url(/img/schimages/butt-footer-search-oranges.png) no-repeat scroll center;
+	background-size: contain;
+/*	filter: alpha(opacity=50);*/
+	-khtml-opacity: 0.50;
+	opacity: 0.50;
+}
+#search:hover {
+/*	filter: alpha(opacity=100);*/
+	-khtml-opacity: 1;
+	opacity: 1;
+}
+
+#cz-box {
+	display: none;
+	padding: 1rem;
+	position: absolute;
+    height: 12rem;
+	width: 28rem;
+	background-color: #fff7d1;
+	bottom: 2.6rem;
+    left: 50%;
+    margin: 2rem auto auto -15rem;
+	border-radius: 10px;
+	border: 1px solid #fbac37;
+	box-shadow: .6rem .6rem 1rem .4rem rgba(0,0,0,.33);
+	z-index: 499;
+	/*
+	Top-bottom - 3 stops - for buttons (and the distro machine box - a BIG button! send "top", "middle", "bottom", and "cutoff")
+	@@button-gradient(top=#fff7d1,middle=#fcce72,bottom=#fceca1,cutoff=85)@@
+	*/
+	background-image: -moz-linear-gradient(top, #fff7d1 0%, #f9e7aa 85%, #FFC44D 100%);
+	background-image: -ms-linear-gradient(top, #fff7d1 0%, #f9e7aa 85%, #FFC44D 100%);
+	background-image: -o-linear-gradient(top, #fff7d1 0%, #f9e7aa 85%, #FFC44D 100%);
+	background-image: -webkit-linear-gradient(top, #fff7d1 0%, #f9e7aa 85%, #FFC44D 100%);
+	background-image: linear-gradient(to bottom, #fff7d1 0%, #f9e7aa 85%, #FFC44D 100%);
+}
+
+
+
+#valid-css, #valid-html {
+	width: 2.4rem;
+	display: inline-block;
+}
+
+
+.underfoot {
+	position: relative;
+	color: #F5A90A;
+	background-color: #403826;
+	padding: 0 2rem 2rem 2rem;
+	font-size: smaller;
+	display: block;
+	z-index: 10;
+}
+.underfoot a:hover {
+	color: #F5A90A;
+}
+
+#underfoot-buttons {
+	float: left;
+	width: 24%;
+}
+#underfoot-quicklinks {
+	float: left;
+	text-align: center;
+	width: 39%;
+	padding-left: 6.67%;
+}
+
+
+#underfoot-tools {
+	float: right;
+	text-align: right;
+	margin-left: 3%;
+	width: 24%;
+}
+.undertitle {
+	text-transform: lowercase;
+	font-weight: 900;
+	font-size: 150%;
+	color: #F5A90A;
+	margin: .5rem 0 1rem 0;
+}
+.undertitle-translate {
+	margin-bottom: .2rem;
+/*	margin: 1rem 0;*/
+}
+.undertitle-quicklinks {
+	margin-bottom: .5rem;
+/*	margin: 1rem 0;*/
+}
+
+#underfoot-donate a {
+	font-weight: 900;
+	font-size: 150%;
+	color: #f9e7aa;
+	margin: .5rem 0 1rem 0;
+}
+
+.flag {
+	width: 20px;
+}
+
+.undertitle-colors {
+	margin-bottom: 0;
+}
+.undertitle-tools {
+	margin-bottom: .25rem;
+}
+/*#underfoot-site-tools {*/
+/*	font-size: 90%;*/
+/*}*/
+.free-bitcoin {
+	font-size: small;
+	vertical-align: super;
+}
+
+
+.foot-gradient {
+	position: relative;
+	height: 2rem;
+	clear: both;
+	width: 100%;
+	/* simple top-down gradient - send it start and end values) */
+	background-image: -moz-linear-gradient(top, #fff7d1 0%, #403826 100%);
+	background-image: -ms-linear-gradient(top, #fff7d1 0%, #403826 100%);
+	background-image: -o-linear-gradient(top, #fff7d1 0%, #403826 100%);
+	background-image: -webkit-linear-gradient(top, #fff7d1 0%, #403826 100%);
+	background-image: linear-gradient(to bottom, #fff7d1 0%, #403826 100%);
+}/* promotions */
+
+.promotion, #my-promotion {
+	position: fixed;
+	bottom: 2rem;
+	z-index: 0;
+}
+.promotion {
+	right: 1rem;
+}
+
+.promotion #ad-banner {
+	width: 12.2rem;
+}
+
+.promotion #ad-skyscraper {
+	margin-right: -.5rem;
+	width: 16.2rem;
+}
+
+
+#my-promotion {
+	left: 1.5rem;
+}
+.my-promo-plate {
+	width: 14rem;
+	height: 7.2rem;
+	background-color: transparent;
+	border: 1px solid #fbac37;
+	text-align: left;
+	font-size: 1.3rem;
+	font-weight: bold;
+	border-radius: 7px;
+	margin-top: 1rem;
+	padding: .5rem .5rem .5rem .25rem;
+/*	filter: alpha(opacity=33);*/
+	-khtml-opacity: 0.33;
+	opacity: 0.33;
+}
+
+.my-promo-plate:hover {
+	transition: all .1s ease-out 0s;
+	background-color: #f9e7aa;
+/*	filter: alpha(opacity=100);*/
+	-khtml-opacity: 1;
+	opacity: 1;
+}
+
+.promo-img {
+	position: relative;
+	float: left;
+	margin: .25rem .25rem .5rem .25rem;
+}
+
+.my-ad-message {
+	padding-top: .25rem;
+	margin-right: .5rem;
+	position: relative;
+	display: block;
+	float: right;
+	width: 60px;
+	text-align: center;
+}
+
+.dummy-ad {
+	background-color: #fff;
+	display: inline;
+}
+
+
+.corz-friends {
+	font-size: 90%;
+	text-align: left;
+	margin-left: -18%;
+	margin-right: -22%;
+}
+
+.friend {}
+
+
+#cookie-notice {
+	transition: all 500ms ease-out;
+	width: 100%;
+	height: 2.8rem;
+	position: fixed;
+	font-weight: 800;
+	padding-top: .5rem;
+	bottom: 0;
+	z-index: 500;
+	text-align: center;
+	box-shadow: 0 0 .5rem #FFC44D;
+	cursor: pointer;
+	/*
+	Top-bottom - 3 stops - for buttons (and the distro machine box - a BIG button! send "top", "middle", "bottom", and "cutoff")
+	@@button-gradient(top=#fff7d1,middle=#fcce72,bottom=#fceca1,cutoff=85)@@
+	*/
+	background-image: -moz-linear-gradient(top, #f9e7aa 0%, #FFC44D 85%, #fbb627 100%);
+	background-image: -ms-linear-gradient(top, #f9e7aa 0%, #FFC44D 85%, #fbb627 100%);
+	background-image: -o-linear-gradient(top, #f9e7aa 0%, #FFC44D 85%, #fbb627 100%);
+	background-image: -webkit-linear-gradient(top, #f9e7aa 0%, #FFC44D 85%, #fbb627 100%);
+	background-image: linear-gradient(to bottom, #f9e7aa 0%, #FFC44D 85%, #fbb627 100%);
+}
+
+@media screen and (max-width: 800px) {
+	#cookie-notice {
+		font-size: 1.2rem;
+		height: 2.4rem;
+	}
+}
+@media screen and (max-width: 640px) {
+	#cookie-notice {
+		font-size: 1.1rem;
+		height: 3.2rem;
+	}
+}
+
+
+/* Site Notice
+   Yeah, you want it! ;o) */
+
+.site-notice-bar::before, .site-notice-bar {
+	-webkit-box-sizing: content-box !important;
+	-moz-box-sizing: content-box !important;
+	box-sizing: content-box !important;
+	transition: all 300ms ease-out;
+	position: relative;
+	display: block;
+	background-color: #f9e7aa;
+	color: #E8910D;
+	border: solid .2rem #fbb627;
+	font-weight: bold;
+	font-size: 110%;
+}
+
+.site-notice-bar {
+	width: 90%;
+	padding: 1rem;
+	margin: 10rem auto 3rem;
+	box-shadow: 0 0 1rem #FFC44D;
+	border: solid .2rem #FFC44D;
+	border-radius: .5rem;
+/*	filter: alpha(opacity=100);*/
+	-khtml-opacity: 1;
+	opacity: 1;
+}
+
+.site-notice-bar > p {
+	margin: 1rem auto;
+	max-width: 90%;
+}
+/*
+	Note how (unlike corz.org in general - hey! It only hit me *after* I was
+	finished a complete HTML5/CSS3 rewrite! doh!) the styles are presented
+	bottom-up, so to speak. The *default* is for small/old screens, and we
+	progressively add funkiness and feautures for bigger screens.
+
+	It seems slightly back-to-front from the "normal" way of doing @media
+	queries, but ensures that visual clients who don't understand them don't get
+	lumped with the desktop version.
+
+	At least, that's my understanding of how it /should/ work! ;o)
+*/
+@media screen and (min-width: 921px) {
+
+	.site-notice-bar::before, .site-notice-bar {
+		position: absolute;
+		border-top: none;
+		border-bottom-right-radius: .5rem;
+		border-bottom-left-radius: .5rem;
+		padding: 0;
+	}
+
+	.site-notice-bar::before {
+		content: attr(data-tab-text);
+		left: 27%;
+		margin-top: 12rem;
+		padding: .5rem 1rem;
+		cursor: pointer;
+		z-index: 100;
+		display: block;
+	}
+
+	.site-notice-bar {
+		top: 0;
+		margin-top: -12.2rem;
+		height: 12rem;
+		width: 80%;
+		left: 10%;
+		z-index: 101;
+	/*	filter: alpha(opacity=66);*/
+	-khtml-opacity: 0.66;
+	opacity: 0.66;
+	}
+
+
+	.site-notice-bar:hover { /* reset */
+		margin: 0;
+	/*	filter: alpha(opacity=100);*/
+	-khtml-opacity: 1;
+	opacity: 1;
+	}
+	.fixed-bar { position: fixed; }
+}
+
+
+
+
+@media screen and (max-width: 1024px) {
+
+	.promotion, #my-promotion {
+		position: relative;
+		bottom: auto;
+		left: auto;
+		right: auto;
+	}
+	.promotion, .promotion #ad-banner, .promotion #ad-skyscraper {
+		margin: .5rem auto 2rem;
+		top: 1rem;
+	}
+	#my-promotion {
+		top: 4rem;
+		margin: 0 2rem;
+		text-align: justify;
+		font-size: 0;
+		clear: both;
+	}
+	#my-promotion::after {
+		display: inline-block;
+		width: 100%;
+		content: "";
+	}
+	.my-promo-plate {
+		display: inline-block;
+		margin: 0;
+	}
+}
+
+
+
+@media screen and (max-width: 920px) {
+	#footer-left, #footer-right  {
+		display: none;
+	}
+	.footer {
+		padding-bottom:  1.98rem;
+	}
+
+
+
+
+
+}
+
+@media screen and (max-width: 800px) {
+
+	#cz-box {
+		padding: 1rem;
+		height: 16rem;
+	}
+
+}
+
+@media screen and (max-width: 640px) {
+
+	.footer {
+		padding-bottom:  2.33rem;
+	}
+	.foot-gradient, .trans-note {
+		display: none;
+	}	.underfoot  {
+		float: none;
+		clear: both;
+		margin: 0;
+		padding-top: 1rem;
+		font-size: 125%;
+	}
+
+	.undertitle-translate,  .undertitle-quicklinks, .undertitle-colors {
+		margin-bottom: .3rem;
+	}
+	.undertitle-quicklinks, .undertitle-colors, .undertitle-tools  {
+		margin-top: 2rem;
+	}
+
+	#underfoot-site-tools {
+		padding-left: 1rem;
+	}
+	#underfoot-buttons, #underfoot-quicklinks, #underfoot-tools {
+		width: 95%;
+		margin: 0;
+		float: none;
+		padding: 0;
+		text-align: justify;
+	}
+
+	#underfoot-buttons img {
+		background-size: 100%;
+		width: 39px;
+	}
+	
+	.corz-friends {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	
+	
+}
+
+
+@media screen and (max-height: 320px) {
+	.underfoot {
+		display: none;
+	}
+}
+
+
+.debug {
+	width: 80rem;
+	margin: 4rem auto;
+}
+
+
+.uptitle {
+	margin-bottom: 1rem;
+	font-size: 80%;
+	font-weight: 800;
+}
+#upload-form {
+	max-width: 50rem;
+ }
+.upload-form {
+	margin-top: 3rem;
+}
+
+.upload-slot {
+	width: 100%;
+}
+
+#upload-submit {
+	float: right;
+}
+input:focus {
+    outline: none;
+}
+.warning, .success, .up-ok, .up-error  {
+	font-weight: bold;
+}
+.warning  {
+	color: #fe3a00;
+}
+.success, .up-ok  {
+	color: #F5A90A;
+}
+.up-error {
+	color: #fff7d1;
+}
+
+/* this simple css makes upload slots look real nice */
+#upload-form .upload-slot {
+	padding: 1rem .1rem 1rem .5rem;
+	height: 100%;	/* anything will do! */
+	font-size: 110%;
+}
+
+
+@media screen and (max-width: 800px) {
+	#upload-form .upload-slot {
+		text-align: left;
+	}
+	#results {
+		font-size: 80%;
+	}
+	.footer {
+		display: none;
+	}
+}
+
+

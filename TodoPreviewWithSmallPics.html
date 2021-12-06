@@ -1,0 +1,713 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>ISKCON BANGLA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://souravtest.eu-4.evennode.com/socket.io/socket.io.js"></script>
+    <link rel="stylesheet" href="css/magicslideshow.css">
+
+</head>
+
+<body>
+
+    <!--#####################-----------STARTING NAVBAR PART--------------#####################-->
+
+    <div class="main-container">
+        <div class="cd-main-header">
+
+
+            <div class="hamburger" aria-label="Close" data-tracking-category="Button" data-tracking-action="Click"
+                data-tracking-label="hamburger-menu">
+                <div class="hamburger-line"></div>
+                <div class=" hamburger-line"></div>
+                <div class="hamburger-line"></div>
+            </div>
+
+            <!--   <img src="img/search.png" class="search-bar" alt="search bar">-->
+            <div class="todaydate">
+            </div>
+
+            <div class="logo">
+                <a class="cd-logo" href="https://www.iskconbangla.com/index.html"><img src="img/iskcon-bangla-logo.jpg "
+                        alt="Logo "></a>
+            </div>
+
+            <!--  <div id="google_translate_element" class="notification"></div>-->
+            <div id="sp" class="notification"><a href="https://www.iskconbangla.com/Prabhupada.html"><img
+                        src="img/sp.jpg" style="width: 45px" alt="search bar"></a></div>
+
+
+            <a href="https://www.iskconbangla.com/tv.html"><img src="img/tv3.png" class="tv" alt="tv"></a>
+
+        </div>
+
+        <hr class="top">
+    </div>
+
+    <!--#####################-----------------------END NAVBAR PART------------------#####################-->
+
+    <!--#####################-----------------------part One-------------------------#####################-->
+    <div class="subnav">
+        <div style="" )>
+            <div style="width: 80px"><a href="https://www.iskconbangla.com/index.html">সংবাদ ক্ষেত্র</a></div>
+            <div class="dropdown" style="width: 100px">
+                <button class="dropbtn">মায়াপুর ভ্রমন</button>
+
+                <div class="dropdown-content">
+                    <a href="https://www.iskconbangla.com/AccomodationPreviewWithSmallPics.html">বাসস্থান</a>
+                    <a href="https://www.iskconbangla.com/PrasadamPreviewWithSmallPics.html">প্রসাদম</a>
+                    <a href="https://www.iskconbangla.com/TodoPreviewWithSmallPics.html">কার্যকলাপ</a>
+                    <a href="https://www.iskconbangla.com/FacilitiesPreviewWithSmallPics.html">সুযোগ সুবিধা</a>
+                    <a href="https://www.iskconbangla.com/Temple.html">মন্দির</a>
+                    <a href="https://www.iskconbangla.com/MayapurTour.html">মায়াপুর ভ্রমণ</a>
+                </div>
+            </div>
+            <!--<li><a href="https://www.iskconbangla.com/Accomodation.html">বাসস্থান</a></li>
+                <li><a href="https://www.iskconbangla.com/Prasadam.html">প্রসাদম</a></li>
+                <li><a href="https://www.iskconbangla.com/Todo.html">কার্যকলাপ</a></li>
+                <li><a href="https://www.iskconbangla.com/MayapurTour.html">মায়াপুর ভ্রমণ</a></li>
+                <div style="width: 40px"><a href="https://www.iskconbangla.com/Temple.html">মন্দির</a></div>-->
+            <div style="width: 95px"><a href="https://www.iskconbangla.com/JoinUs.html">যোগদান করুন</a></div>
+            <div style="width: 90px"><a href="https://www.iskconbangla.com/bengalitemples.html">মন্দির</a></div>
+            <div style="width: 90px"><a href="https://www.iskconbangla.com/tv.html">মায়াপুর টিভি</a></div>
+            <div style="width: 90px"><a href="https://www.iskconbangla.com/bookshop.html">বইের দোকান</a></div>
+            <div style="width: 65px"><a href="https://www.iskconbangla.com/Prabhupada.html">প্রভুপাদ</a></div>
+        </div>
+        <hr class="bottom">
+    </div>
+
+    <div class="main-container">
+        <div class="hamburger-container" style="display: none">
+            <div class="close-dropdown"><img src="img/fa_closewindow.png" alt="close-dropdown"></div>
+            <div class="hamburger-list"><a href="https://www.iskconbangla.com/index.html">সংবাদ ক্ষেত্র</a></div>
+            <div class="hamburger-list"><a href="https://www.iskconbangla.com/Accomodation.html">বাসস্থান</a></div>
+            <div class="hamburger-list"><a href="https://www.iskconbangla.com/Prasadam.html">প্রসাদম</a></div>
+            <div class="hamburger-list"><a href="https://www.iskconbangla.com/Todo.html">কার্যকলাপ</a></div>
+            <div class="hamburger-list"><a href="https://www.iskconbangla.com/MayapurTour.html">মায়াপুর ভ্রমণ</a></div>
+            <div class="hamburger-list"><a href="https://www.iskconbangla.com/Temple.html">মন্দির</a></div>
+            <div class="hamburger-list"><a href="https://www.iskconbangla.com/JoinUs.html">যোগদান করুন</a></div>
+            <div class="hamburger-list"><a href="https://www.iskconbangla.com/Facilities.html">সুযোগ সুবিধা</a></div>
+            <div class="hamburger-list"><a href="https://www.iskconbangla.com/SmallTemples.html"> ছোট মন্দির</a></div>
+
+        </div>
+        <!--#####################-----------BANNER-------------------------#####################-->
+
+        <div class="head-banner">
+        </div>
+
+        <hr class="bottom">
+        <!--#####################-----------NEWS----------------------------#####################-->
+        <br><br>
+        <!--/--------------------------------------------- story 1--------------------------------------------------\ -->
+        <div class="news-story">
+            <div class="story-block">
+
+                <div class="story-img">
+
+                    <div class="MagicSlideshow"
+                        data-options="effect: slide-in; selectors: bottom; caption:false; selectorsEye: false; pause: false; preload: false; autoplay: false; showLoader: true; autostart: false;">
+                        <img title="Touch, tap, swipe" src="/img/TovpTour/TOVPTour1.jpg" alt=""
+                            data-caption="Natural touchscreen experience - visitors intuitively feel at ease with your slideshows."
+                            data-thumb-image="/img/TovpTour/thumbnails/TOVPTour1_sm.jpg?scale.height=60" />
+
+                        <img title="Maximum engagement" src="/img/TovpTour/TOVPTour2.jpg" alt=""
+                            data-caption="Works beautifully out-of-the-box or optimize 30 popular settings to meet your requirements."
+                            data-thumb-image="/img/TovpTour/thumbnails/TOVPTour2_sm.jpg?scale.height=60" />
+
+                        <img title="Maximum engagement" src="/img/TovpTour/TOVPTour3.jpg" alt=""
+                            data-caption="Works beautifully out-of-the-box or optimize 30 popular settings to meet your requirements."
+                            data-thumb-image="/img/TovpTour/thumbnails/TOVPTour3_sm.jpg?scale.height=60" />
+
+                        <img title="Maximum engagement" src="/img/TovpTour/TOVPTour4.jpg" alt=""
+                            data-caption="Works beautifully out-of-the-box or optimize 30 popular settings to meet your requirements."
+                            data-thumb-image="/img/TovpTour/thumbnails/TOVPTour4_sm.jpg?scale.height=60" />
+
+                        <img title="Maximum engagement" src="/img/TovpTour/TOVPTour5.jpg" alt=""
+                            data-caption="Works beautifully out-of-the-box or optimize 30 popular settings to meet your requirements."
+                            data-thumb-image="/img/TovpTour/thumbnails/TOVPTour2_sm.jpg?scale.height=60" />
+
+                        <img title="Maximum engagement" src="/img/TovpTour/TOVPTour6.jpg" alt=""
+                            data-caption="Works beautifully out-of-the-box or optimize 30 popular settings to meet your requirements."
+                            data-thumb-image="/img/TovpTour/thumbnails/TOVPTour6_sm.jpg?scale.height=60" />
+
+                    </div>
+                </div>
+                <div class="story-body">
+
+                    <div class="title-holder">
+                        <img src="/img/Logo/tovptour.png" style="height:100%">
+                    </div>
+
+                    <div class="story-list"><span class="bolder">সময়সূচি: </span>১১:০০ টা / ৪:০০টা, (নতুন মন্দির) ৩০
+                        মিনিটের জন্য দর্শন</div>
+                    <div class="story-list"><span class="bolder">স্থান: </span>চক্র ভবনের পাশে</div>
+
+                </div>
+            </div><br>
+            <hr><br>
+
+            <!--/--------------------------------------------- story 2--------------------------------------------------\ -->
+
+            <div class="story-block">
+
+                <div class="story-img">
+
+                    <div class="MagicSlideshow"
+                        data-options="effect: slide-in; selectors: bottom; caption:false; selectorsEye: false; pause: false; preload: false; autoplay: false; showLoader: true; autostart: false;">
+                        <img title="Touch, tap, swipe" src="/img/fulldometheater/Theater1.jpg" alt=""
+                            data-caption="Natural touchscreen experience - visitors intuitively feel at ease with your slideshows."
+                            data-thumb-image="/img/fulldometheater/thumbnails/Theater1_sm.jpg?scale.height=60" />
+
+                        <img title="Maximum engagement" src="/img/fulldometheater/Theater2.jpg" alt=""
+                            data-caption="Works beautifully out-of-the-box or optimize 30 popular settings to meet your requirements."
+                            data-thumb-image="/img/fulldometheater/thumbnails/Theater2_sm.jpg?scale.height=60" />
+
+                        <img title="Ken Burns gorgeousness"
+                            data-caption="Enable the popular zoom/pan/fade Ken Burns effect - like the one you see on this demo."
+                            src="/img/fulldometheater/Theater3.jpg" alt=""
+                            data-thumb-image="/img/fulldometheater/thumbnails/Theater3_sm.jpg?scale.height=60" />
+
+                        <img title="Responsive sizing on every device"
+                            data-caption="Images automatically resize to fit your viewers screen, so they always look amazing."
+                            src="/img/fulldometheater/Theater4.jpg" alt=""
+                            data-thumb-image="/img/fulldometheater/thumbnails/Theater4_sm.jpg?scale.height=60" />
+
+                        <img title="Responsive sizing on every device"
+                            data-caption="Images automatically resize to fit your viewers screen, so they always look amazing."
+                            src="/img/fulldometheater/Theater5.jpg" alt=""
+                            data-thumb-image="/img/fulldometheater/thumbnails/Theater5_sm.jpg?scale.height=60" />
+
+                        <img title="Responsive sizing on every device"
+                            data-caption="Images automatically resize to fit your viewers screen, so they always look amazing."
+                            src="/img/fulldometheater/Theater6.jpg" alt=""
+                            data-thumb-image="/img/fulldometheater/thumbnails/Theater6_sm.jpg?scale.height=60" />
+
+                        <img title="Responsive sizing on every device"
+                            data-caption="Images automatically resize to fit your viewers screen, so they always look amazing."
+                            src="/img/fulldometheater/Theater7.jpg" alt=""
+                            data-thumb-image="/img/fulldometheater/thumbnails/Theater7_sm.jpg?scale.height=60" />
+
+                        <img title="Responsive sizing on every device"
+                            data-caption="Images automatically resize to fit your viewers screen, so they always look amazing."
+                            src="/img/fulldometheater/Theater8.jpg" alt=""
+                            data-thumb-image="/img/fulldometheater/thumbnails/Theater8_sm.jpg?scale.height=60" />
+
+                        <img title="Responsive sizing on every device"
+                            data-caption="Images automatically resize to fit your viewers screen, so they always look amazing."
+                            src="/img/fulldometheater/Theater9.jpg" alt=""
+                            data-thumb-image="/img/fulldometheater/thumbnails/Theater9_sm.jpg?scale.height=60" />
+
+                        <img title="Responsive sizing on every device"
+                            data-caption="Images automatically resize to fit your viewers screen, so they always look amazing."
+                            src="/img/fulldometheater/Theater10.jpg" alt=""
+                            data-thumb-image="/img/fulldometheater/thumbnails/Theater10_sm.jpg?scale.height=60" />
+
+                        <img title="Responsive sizing on every device"
+                            data-caption="Images automatically resize to fit your viewers screen, so they always look amazing."
+                            src="/img/fulldometheater/Theater11.jpg" alt=""
+                            data-thumb-image="/img/fulldometheater/thumbnails/Theater11_sm.jpg?scale.height=60" />
+
+                        <img title="Responsive sizing on every device"
+                            data-caption="Images automatically resize to fit your viewers screen, so they always look amazing."
+                            src="/img/fulldometheater/Theater12.jpg" alt=""
+                            data-thumb-image="/img/fulldometheater/thumbnails/Theater12_sm.jpg?scale.height=60" />
+
+                        <img title="Responsive sizing on every device"
+                            data-caption="Images automatically resize to fit your viewers screen, so they always look amazing."
+                            src="/img/fulldometheater/Theater13.jpg" alt=""
+                            data-thumb-image="/img/fulldometheatre/thumbnails/Theater13_sm.jpg?scale.height=60" />
+
+                        <img title="Responsive sizing on every device"
+                            data-caption="Images automatically resize to fit your viewers screen, so they always look amazing."
+                            src="/img/fulldometheater/Theater14.jpg" alt=""
+                            data-thumb-image="/img/fulldometheater/thumbnails/Theater14_sm.jpg?scale.height=60" />
+
+                    </div>
+                </div>
+
+                <div class="story-body">
+
+                    <div class="title-holder">
+                        <img src="/img/Logo/fulldometheater.png" style="height:100%">
+                    </div>
+
+                    <div class="story-list"><span class="bolder">খোলা/বন্ধের সময়:</span>সকাল ১০:০০টা - রাত ৮:০০টা</div>
+                    <div class="story-list"><span class="bolder">চলচ্চিত্রের সময়সূচি:</span>সকাল ১০:১০মি, সকাল ১০:৩০মি,
+                        দুপুর ১২:৫০মি, দুপুর ০২:১০মি, দুপুর ৩:৩০মি, বিকাল ৪:৫০মি, সন্ধ্যা ৬:১০মি, সন্ধ্যা ৭:৩০মি।</div>
+                    <div class="story-list"><span class="bolder">বিস্তারিত:</span>মায়াপুরে প্রথমবার ! পবিত্র ধাম এক
+                        অনন্য আধ্যাত্মিক অভিজ্ঞতা লাভ করুণ। এখানে ৩৬০ ডিগ্রি ভিডিও দেখার অভিজ্ঞতা লাভ করবেন। প্রতি শো ২০
+                        মিনিট করে দেখতে পাবেন।</div>
+                    <div class="story-list"><span class="bolder">মূল্যে :</span>৪০.০০ টাকা </div>
+                    <div class="story-list"><span class="bolder">স্থান:</span>গোবিন্দাস রেস্টুরেন্টের পিছনে</div>
+                    <div class="story-list"><span class="bolder">দূরত্ব:</span>২০০ মিটার মূল মন্দির থেকে</div>
+                    <div class="story-list"><span class="bolder">গ্রুপ বকিং:</span>+৯১ ৭০২৯৭৪৬৪৫৬</div>
+
+                </div>
+            </div><br>
+            <hr><br>
+
+            <!--/---------------------------------------------story 3--------------------------------------------------\-->
+
+            <div class="story-block">
+
+                <div class="story-img">
+
+                    <div class="MagicSlideshow"
+                        data-options="effect: slide-in; selectors: bottom; caption:false; selectorsEye: false; pause: false; preload: false; autoplay: false; showLoader: true; autostart: false;">
+                        <img title="Touch, tap, swipe" src="/img/boat/boat1.jpg" alt=""
+                            data-caption="Natural touchscreen experience - visitors intuitively feel at ease with your slideshows."
+                            data-thumb-image="/img/boat/thumbnails/boat1_sm.jpg?scale.height=60" />
+
+                        <img title="Maximum engagement" src="/img/boat/boat2.jpg" alt=""
+                            data-caption="Works beautifully out-of-the-box or optimize 30 popular settings to meet your requirements."
+                            data-thumb-image="/img/boat/thumbnails/boat2_sm.jpg?scale.height=60" />
+
+                    </div>
+                </div>
+
+                <div class="story-body">
+
+                    <div class="title-holder">
+                        <img src="/img/Logo/boat.png" style="height:100%">
+                    </div>
+
+                    <div class="story-list"><span class="bolder">সময়: </span> <br>দুপুর ৩:০০টা - বিকাল ৪:০০টা</div>
+                    <div class="story-list"><span class="bolder">ভাড়া :</span> <br>১০০.০০ টাকা</div>
+                    <div class="story-list"><span class="bolder">মোবাইল :</span>+৯১ ৯৭৩৫৯২৬০৪৪</div>
+                    <div class="story-list"><span class="bolder">বুকিং স্থান:</span>গদা ভবনের সামনে </div>
+                    <div class="story-list"><span class="bolder">দূরত্ব: </span>২০০ মিটার মূল মন্দির থেকে</div>
+                </div>
+            </div><br>
+            <hr><br>
+
+            <!--/---------------------------------------------story 4--------------------------------------------------\-->
+
+            <div class="story-block">
+
+                <div class="story-img">
+
+                    <div class="MagicSlideshow"
+                        data-options="effect: slide-in; selectors: bottom; caption:false; selectorsEye: false; pause: false; preload: false; autoplay: false; showLoader: true; autostart: false;">
+                        <img title="Touch, tap, swipe" src="/img/chaitanyaexhibition/ChaitanyaExhibition1.jpg" alt=""
+                            data-caption="Natural touchscreen experience - visitors intuitively feel at ease with your slideshows."
+                            data-thumb-image="/img/chaitanyaexhibition/thumbnails/ChaitanyaExhibition1_sm.jpg?scale.height=60" />
+
+                        <img title="Maximum engagement" src="/img/chaitanyaexhibition/ChaitanyaExhibition2.jpg" alt=""
+                            data-caption="Works beautifully out-of-the-box or optimize 30 popular settings to meet your requirements."
+                            data-thumb-image="/img/chaitanyaexhibition/thumbnails/ChaitanyaExhibition2_sm.jpg?scale.height=60" />
+
+                        <img title="Maximum engagement" src="/img/chaitanyaexhibition/ChaitanyaExhibition3.jpg" alt=""
+                            data-caption="Works beautifully out-of-the-box or optimize 30 popular settings to meet your requirements."
+                            data-thumb-image="/img/chaitanyaexhibition/thumbnails/ChaitanyaExhibition3_sm.jpg?scale.height=60" />
+
+                        <img title="Maximum engagement" src="/img/chaitanyaexhibition/ChaitanyaExhibition4.jpg" alt=""
+                            data-caption="Works beautifully out-of-the-box or optimize 30 popular settings to meet your requirements."
+                            data-thumb-image="/img/chaitanyaexhibition/thumbnails/ChaitanyaExhibition4_sm.jpg?scale.height=60" />
+
+                        <img title="Maximum engagement" src="/img/chaitanyaexhibition/ChaitanyaExhibition5.jpg" alt=""
+                            data-caption="Works beautifully out-of-the-box or optimize 30 popular settings to meet your requirements."
+                            data-thumb-image="/img/chaitanyaexhibition/thumbnails/ChaitanyaExhibition5_sm.jpg?scale.height=60" />
+
+                        <img title="Maximum engagement" src="/img/chaitanyaexhibition/ChaitanyaExhibition6.jpg" alt=""
+                            data-caption="Works beautifully out-of-the-box or optimize 30 popular settings to meet your requirements."
+                            data-thumb-image="/img/chaitanyaexhibition/thumbnails/ChaitanyaExhibition6_sm.jpg?scale.height=60" />
+
+                        <img title="Maximum engagement" src="/img/chaitanyaexhibition/ChaitanyaExhibition7.jpg" alt=""
+                            data-caption="Works beautifully out-of-the-box or optimize 30 popular settings to meet your requirements."
+                            data-thumb-image="/img/chaitanyaexhibition/thumbnails/ChaitanyaExhibition7_sm.jpg?scale.height=60" />
+
+                        <img title="Maximum engagement" src="/img/chaitanyaexhibition/ChaitanyaExhibition8.jpg" alt=""
+                            data-caption="Works beautifully out-of-the-box or optimize 30 popular settings to meet your requirements."
+                            data-thumb-image="/img/chaitanyaexhibition/thumbnails/ChaitanyaExhibition8_sm.jpg?scale.height=60" />
+
+                    </div>
+                </div>
+
+
+                <div class="story-body">
+
+                    <div class="title-holder">
+                        <img src="/img/Logo/chaitanyaexhibit.png" style="height:100%">
+                    </div>
+
+                    <div class="story-list"><span class="bolder"> প্রদর্শনী সময়সূচী: </span> <br> ভোর ৫:০০টা - সন্ধ্যা
+                        ৭:০০টা<br>সকাল ৯:০০টা - দুপুর ১:০০টা<br> সকাল ৮:০০টা - রাত ৮:০০টা PM</div>
+                    <div class="story-list"><span class="bolder">স্থান: </span>মায়াপুর চন্দ্রোদয় মন্দির</div>
+                    <div class="story-list"><span class="bolder">প্রদর্শনীর মূল্য: </span>০.০০ টাকা</div>
+
+                </div>
+            </div><br>
+            <hr><br>
+
+            <!--/---------------------------------------------story 5 ভোগ ভান্ডার--------------------------------------------------\-->
+
+            <div class="story-block">
+
+                <div class="story-img">
+
+                    <div class="MagicSlideshow"
+                        data-options="effect: slide-in; selectors: bottom; caption:false; selectorsEye: false; pause: false; preload: false; autoplay: false; showLoader: true; autostart: false;">
+                        <img title="Touch, tap, swipe" src="/img/bhogabhandar/bhoga1.jpg" alt=""
+                            data-caption="Natural touchscreen experience - visitors intuitively feel at ease with your slideshows."
+                            data-thumb-image="/img/bhogabhandar/thumbnails/bhoga1_sm.jpg?scale.height=60" />
+
+                        <img title="Maximum engagement" src="/img/bhogabhandar/bhoga2.jpg" alt=""
+                            data-caption="Works beautifully out-of-the-box or optimize 30 popular settings to meet your requirements."
+                            data-thumb-image="/img/bhogabhandar/thumbnails/bhoga2_sm.jpg?scale.height=60" />
+
+                        <img title="Maximum engagement" src="/img/bhogabhandar/bhoga3.jpg" alt=""
+                            data-caption="Works beautifully out-of-the-box or optimize 30 popular settings to meet your requirements."
+                            data-thumb-image="/img/bhogabhandar/thumbnails/bhoga3_sm.jpg?scale.height=60" />
+
+                        <img title="Maximum engagement" src="/img/bhogabhandar/bhoga4.jpg" alt=""
+                            data-caption="Works beautifully out-of-the-box or optimize 30 popular settings to meet your requirements."
+                            data-thumb-image="/img/bhogabhandar/thumbnails/bhoga4_sm.jpg?scale.height=60" />
+
+                        <img title="Maximum engagement" src="/img/bhogabhandar/bhoga5.jpg" alt=""
+                            data-caption="Works beautifully out-of-the-box or optimize 30 popular settings to meet your requirements."
+                            data-thumb-image="/img/bhogabhandar/thumbnails/bhoga5_sm.jpg?scale.height=60" />
+
+                    </div>
+                </div>
+
+                <div class="story-body">
+
+                    <div class="title-holder">
+                        <img src="/img/Logo/samadhiexhibition.png" style="height:100%">
+                    </div>
+
+                    <div class="story-list"><span class="bolder"> পূজা:</span> <br>শ্রী শ্রীনৃসিংহদেব, শ্রী শ্রীরাধা
+                        মাধব,
+                        শ্রী শ্রীপঞ্চতত্ত্ব - ১০১ টাকা ও ৫০১ টাকা</div>
+                    <div class="story-list"><span class="bolder">বিশেষ পূজা: </span>১০০১ টাকা, ১০৮ তুলসী পূজা - ৩০১
+                        টাকা,
+                        প্রদীপ - ৫ টাকা
+                        মালা - ২০১ টাকা, তূলসী মালা - ৫০১ টাকা</div>
+                    <div class="story-list"><span class="bolder">স্থান: </span>শ্রী শ্রীরাধা মাধব মন্দিরের গেটের পাশে
+                    </div>
+                    <div class="story-list"><span class="bolder">সময়: </span> <br> সকাল ৭:০০ টা - দুপুর ১:০০ টা <br>
+                        বিকাল
+                        ৪:০০টা - রাত ৮:০০ টা</div>
+
+                </div>
+            </div><br>
+            <hr><br>
+
+
+
+            <!--/---------------------------------------------story 6 সমাধি প্রদর্শনী--------------------------------------------------\-->
+
+            <div class="story-block">
+
+                <div class="story-img">
+
+                    <div class="MagicSlideshow"
+                        data-options="effect: slide-in; selectors: bottom; caption:false; selectorsEye: false; pause: false; preload: false; autoplay: false; showLoader: true; autostart: false;">
+                        <img title="Touch, tap, swipe" src="/img/samadhiexhibition/samadhiexhibition1.jpg" alt=""
+                            data-caption="Natural touchscreen experience - visitors intuitively feel at ease with your slideshows."
+                            data-thumb-image="/img/samadhiexhibition/thumbnails/samadhiexhibition1_sm.jpg?scale.height=60" />
+
+                        <img title="Maximum engagement" src="/img/samadhiexhibition/samadhiexhibition2.jpg" alt=""
+                            data-caption="Works beautifully out-of-the-box or optimize 30 popular settings to meet your requirements."
+                            data-thumb-image="/img/samadhiexhibition/thumbnails/samadhiexhibition2_sm.jpg?scale.height=60" />
+
+                        <img title="Maximum engagement" src="/img/samadhiexhibition/samadhiexhibition3.jpg" alt=""
+                            data-caption="Works beautifully out-of-the-box or optimize 30 popular settings to meet your requirements."
+                            data-thumb-image="/img/samadhiexhibition/thumbnails/samadhiexhibition3_sm.jpg?scale.height=60" />
+
+                        <img title="Maximum engagement" src="/img/samadhiexhibition/samadhiexhibition4.jpg" alt=""
+                            data-caption="Works beautifully out-of-the-box or optimize 30 popular settings to meet your requirements."
+                            data-thumb-image="/img/samadhiexhibition/thumbnails/samadhiexhibition4_sm.jpg?scale.height=60" />
+
+                        <img title="Maximum engagement" src="/img/samadhiexhibition/samadhiexhibition5.jpg" alt=""
+                            data-caption="Works beautifully out-of-the-box or optimize 30 popular settings to meet your requirements."
+                            data-thumb-image="/img/samadhiexhibition/thumbnails/samadhiexhibition5_sm.jpg?scale.height=60" />
+
+                        <img title="Maximum engagement" src="/img/samadhiexhibition/samadhiexhibition6.jpg" alt=""
+                            data-caption="Works beautifully out-of-the-box or optimize 30 popular settings to meet your requirements."
+                            data-thumb-image="/img/samadhiexhibition/thumbnails/samadhiexhibition6_sm.jpg?scale.height=60" />
+
+                        <img title="Maximum engagement" src="/img/samadhiexhibition/samadhiexhibition7.jpg" alt=""
+                            data-caption="Works beautifully out-of-the-box or optimize 30 popular settings to meet your requirements."
+                            data-thumb-image="/img/samadhiexhibition/thumbnails/samadhiexhibition7_sm.jpg?scale.height=60" />
+
+                        <img title="Maximum engagement" src="/img/samadhiexhibition/samadhiexhibition8.jpg" alt=""
+                            data-caption="Works beautifully out-of-the-box or optimize 30 popular settings to meet your requirements."
+                            data-thumb-image="/img/samadhiexhibition/thumbnails/samadhiexhibition8_sm.jpg?scale.height=60" />
+
+                        <img title="Maximum engagement" src="/img/samadhiexhibition/samadhiexhibition9.jpg" alt=""
+                            data-caption="Works beautifully out-of-the-box or optimize 30 popular settings to meet your requirements."
+                            data-thumb-image="/img/samadhiexhibition/thumbnails/samadhiexhibition9_sm.jpg?scale.height=60" />
+
+                        <img title="Maximum engagement" src="/img/samadhiexhibition/samadhiexhibition10.jpg" alt=""
+                            data-caption="Works beautifully out-of-the-box or optimize 30 popular settings to meet your requirements."
+                            data-thumb-image="/img/samadhiexhibition/thumbnails/samadhiexhibition10_sm.jpg?scale.height=60" />
+
+                        <img title="Maximum engagement" src="/img/samadhiexhibition/samadhiexhibition11.jpg" alt=""
+                            data-caption="Works beautifully out-of-the-box or optimize 30 popular settings to meet your requirements."
+                            data-thumb-image="/img/samadhiexhibition/thumbnails/samadhiexhibition11_sm.jpg?scale.height=60" />
+
+                    </div>
+                </div>
+
+                <div class="story-body">
+
+                    <div class="title-holder">
+                        <img src="/img/Logo/samadhiexhibition.png" style="height:100%">
+                    </div>
+
+                    <div class="story-list"><span class="bolder"> মিউজিয়ামের খোলা/বন্ধের সময় :</span> <br>সকাল ৯:০০টা -
+                        দুপুর ১:০০টা<br>বিকাল ৩:৩০মি. - রাত ৮:৪৫মি. </div>
+                    <div class="story-list"><span class="bolder">প্রদর্শনীর মূল্য: </span>১৫.০০ টাকা</div>
+                    <div class="story-list"><span class="bolder">স্থান: </span>শ্রীল প্রভুপাদ পুস্প সমাধি মন্দির</div>
+                    <div class="story-list"><span class="bolder">দূরত্ব: </span>৪০০ মিটার মূল মন্দির থেকে</div>
+
+                </div>
+            </div><br>
+            <hr><br>
+
+
+
+
+            <!--/---------------------------------------------story 7 ব্রহ্ম জিজ্ঞাসা--------------------------------------------------\-->
+            <div class="story-block">
+
+                <div class="story-img">
+
+                    <div class="MagicSlideshow"
+                        data-options="effect: slide-in; selectors: bottom; caption:false; selectorsEye: false; pause: false; preload: false; autoplay: false; showLoader: true; autostart: false;">
+                        <img title="Touch, tap, swipe" src="/img/outdoorclass/outdoorclass1.jpg" alt=""
+                            data-caption="Natural touchscreen experience - visitors intuitively feel at ease with your slideshows."
+                            data-thumb-image="/img/outdoorclass/thumbnails/outdoorclass1_sm.jpg?scale.height=60" />
+
+                        <img title="Maximum engagement" src="/img/outdoorclass/outdoorclass2.jpg" alt=""
+                            data-caption="Works beautifully out-of-the-box or optimize 30 popular settings to meet your requirements."
+                            data-thumb-image="/img/outdoorclass/thumbnails/outdoorclass2_sm.jpg?scale.height=60" />
+
+                        <img title="Ken Burns gorgeousness"
+                            data-caption="Enable the popular zoom/pan/fade Ken Burns effect - like the one you see on this demo."
+                            src="/img/outdoorclass/outdoorclass3.jpg" alt=""
+                            data-thumb-image="/img/outdoorclass/thumbnails/outdoorclass3_sm.jpg?scale.height=60" />
+
+                    </div>
+                </div>
+
+                <div class="story-body">
+
+                    <div class="title-holder">
+                        <img src="/img/Logo/outdoorclass.png" style="height:100%">
+                    </div>
+                    <div class="story-list">ঘরে বসে কৃষ্ণভক্তির আধ্যাত্মিক গাইড</div>
+
+                    <div class="story-list"><span class="bolder">কার্যক্রম: </span>ভাগবত কথা ও প্রশ্ন উত্তর</div>
+                    <div class="story-list"><span class="bolder">সময়সূচী: </span>দুপুর ১২:০০টা - বিকাল ৪:০০টা</div>
+                    <div class="story-list"><span class="bolder">যোগাযোগ: </span>+৯১ ৮৯৪৫৫১৪৬১২</div>
+                    <div class="story-list"><span class="bolder">স্থান: </span>গোবিন্দাস রেস্টুরেন্টের সামনে</div>
+                    <div class="story-list"><span class="bolder">দূরত্ব: </span>১০০ মিটার মূল মন্দির থেকে</div>
+                </div>
+            </div><br>
+            <hr><br>
+
+
+            <!--/---------------------------------------------story 8 গোশালা দর্শন --------------------------------------------------\-->
+
+
+
+            <div class="story-block">
+
+                <div class="story-img">
+
+                    <div class="MagicSlideshow"
+                        data-options="effect: slide-in; selectors: bottom; caption:false; selectorsEye: false; pause: false; preload: false; autoplay: false; showLoader: true; autostart: false;">
+                        <img title="Touch, tap, swipe" src="/img/Goshala/Goshala1.jpg" alt=""
+                            data-caption="Natural touchscreen experience - visitors intuitively feel at ease with your slideshows."
+                            data-thumb-image="/img/Goshala/thumbnails/Goshala1_sm.jpg?scale.height=60" />
+
+                        <img title="Maximum engagement" src="/img/Goshala/Goshala2.jpg" alt=""
+                            data-caption="Works beautifully out-of-the-box or optimize 30 popular settings to meet your requirements."
+                            data-thumb-image="/img/Goshala/thumbnails/Goshala2_sm.jpg?scale.height=60" />
+
+                        <img title="Ken Burns gorgeousness"
+                            data-caption="Enable the popular zoom/pan/fade Ken Burns effect - like the one you see on this demo."
+                            src="/img/Goshala/Goshala3.jpg" alt=""
+                            data-thumb-image="/img/Goshala/thumbnails/Goshala3_sm.jpg?scale.height=60" />
+
+                        <img title="Responsive sizing on every device"
+                            data-caption="Images automatically resize to fit your viewers screen, so they always look amazing."
+                            src="/img/Goshala/Goshala4.jpg" alt=""
+                            data-thumb-image="/img/Goshala/thumbnails/Goshala4_sm.jpg?scale.height=60" />
+
+                        <img title="Responsive sizing on every device"
+                            data-caption="Images automatically resize to fit your viewers screen, so they always look amazing."
+                            src="/img/Goshala/Goshala5.jpg" alt=""
+                            data-thumb-image="/img/Goshala/thumbnails/Goshala5_sm.jpg?scale.height=60" />
+
+                        <img title="Responsive sizing on every device"
+                            data-caption="Images automatically resize to fit your viewers screen, so they always look amazing."
+                            src="/img/Goshala/Goshala6.jpg" alt=""
+                            data-thumb-image="/img/Goshala/thumbnails/Goshala6_sm.jpg?scale.height=60" />
+
+                        <img title="Responsive sizing on every device"
+                            data-caption="Images automatically resize to fit your viewers screen, so they always look amazing."
+                            src="/img/Goshala/Goshala7.jpg" alt=""
+                            data-thumb-image="/img/Goshala/thumbnails/Goshala7_sm.jpg?scale.height=60" />
+
+                    </div>
+                </div>
+
+                <div class="story-body">
+
+                    <div class="title-holder">
+                        <img src="/img/Logo/goshala.png" style="height:100%">
+                    </div>
+
+                    <div class="story-list"><span class="bolder">গরু: </span>৪০০ টি</div>
+                    <div class="story-list"><span class="bolder">খোলা/বন্ধের সময়: </span>ভোর ৬:০০ টা - রাত ৯:০০ টা</div>
+                    <div class="story-list"><span class="bolder">দূরত্ব: </span>৫০০ মিটার মূল মন্দির থেকে</div>
+
+                </div>
+            </div><br>
+            <hr><br>
+
+
+            <!--/---------------------------------------------story 9 হাতি পরিক্রমা --------------------------------------------------\-->
+
+            <div class="story-block">
+
+                <div class="story-img">
+
+                    <div class="MagicSlideshow"
+                        data-options="effect: slide-in; selectors: bottom; caption:false; selectorsEye: false; pause: false; preload: false; autoplay: false; showLoader: true; autostart: false;">
+                        <img title="Touch, tap, swipe" src="/img/elephantprocession/ElephantProcession1.jpg" alt=""
+                            data-caption="Natural touchscreen experience - visitors intuitively feel at ease with your slideshows."
+                            data-thumb-image="/img/elephantprocession/thumbnails/ElephantProcession1_sm.jpg?scale.height=60" />
+
+                        <img title="Maximum engagement" src="/img/elephantprocession/ElephantProcession2.jpg" alt=""
+                            data-caption="Works beautifully out-of-the-box or optimize 30 popular settings to meet your requirements."
+                            data-thumb-image="/img/elephantprocession/thumbnails/ElephantProcession2_sm.jpg?scale.height=60" />
+
+                        <img title="Ken Burns gorgeousness"
+                            data-caption="Enable the popular zoom/pan/fade Ken Burns effect - like the one you see on this demo."
+                            src="/img/elephantprocession/ElephantProcession3.jpg" alt=""
+                            data-thumb-image="/img/elephantprocession/thumbnails/ElephantProcession3_sm.jpg?scale.height=60" />
+
+                        <img title="Responsive sizing on every device"
+                            data-caption="Images automatically resize to fit your viewers screen, so they always look amazing."
+                            src="/img/elephantprocession/ElephantProcession4.jpg" alt=""
+                            data-thumb-image="/img/elephantprocession/thumbnails/ElephantProcession4_sm.jpg?scale.height=60" />
+
+                        <img title="Responsive sizing on every device"
+                            data-caption="Images automatically resize to fit your viewers screen, so they always look amazing."
+                            src="/img/elephantprocession/ElephantProcession5.jpg" alt=""
+                            data-thumb-image="/img/elephantprocession/thumbnails/ElephantProcession5_sm.jpg?scale.height=60" />
+
+                    </div>
+                </div>
+
+                <div class="story-body">
+
+                    <div class="title-holder">
+                        <img src="/img/Logo/elephant.png" style="height:100%">
+                    </div>
+
+                    <div class="story-list"><span class="bolder">সময়সূচী: </span>প্রতি শনিবার রাস পূর্ণিমা থাকে দোল
+                        পূর্ণিমা পর্যন্ত মূল মন্দির থেকে রাধা মাধবকে হাতির
+                        পিঠে বসিয়ে মায়াপুর সম্পূর্ণ ক্যাম্পাস পরিক্রমা করা হয়। (৪:৩০মি)</div>
+                    <div class="story-list"><span class="bolder">পরিক্রমার দূরত্ব: </span> ১ কি.মি.</div>
+                </div>
+            </div><br>
+            <hr><br>
+
+
+            <!--/---------------------------------------------story 10 গরুর গাড়ীতে মায়াপুর দর্শন--------------------------------------------------\-->
+
+
+            <div class="story-block">
+
+                <div class="story-img">
+
+                    <div class="MagicSlideshow"
+                        data-options="effect: slide-in; selectors: bottom; caption:false; selectorsEye: false; pause: false; preload: false; autoplay: false; showLoader: true; autostart: false;">
+                        <img title="Touch, tap, swipe" src="/img/BullockCart/BullockCart1.jpg" alt=""
+                            data-caption="Natural touchscreen experience - visitors intuitively feel at ease with your slideshows."
+                            data-thumb-image="/img/BullockCart/thumbnails/BullockCart1_sm.jpg?scale.height=60" />
+
+                        <img title="Maximum engagement" src="/img/BullockCart/BullockCart2.jpg" alt=""
+                            data-caption="Works beautifully out-of-the-box or optimize 30 popular settings to meet your requirements."
+                            data-thumb-image="/img/BullockCart/thumbnails/BullockCart2_sm.jpg?scale.height=60" />
+
+                        <img title="Ken Burns gorgeousness"
+                            data-caption="Enable the popular zoom/pan/fade Ken Burns effect - like the one you see on this demo."
+                            src="/img/BullockCart/BullockCart3.jpg" alt=""
+                            data-thumb-image="/img/BullockCart/thumbnails/BullockCart3_sm.jpg?scale.height=60" />
+
+                        <img title="Responsive sizing on every device"
+                            data-caption="Images automatically resize to fit your viewers screen, so they always look amazing."
+                            src="/img/BullockCart/BullockCart4.jpg" alt=""
+                            data-thumb-image="/img/BullockCart/thumbnails/BullockCart4_sm.jpg?scale.height=60" />
+
+                        <img title="Responsive sizing on every device"
+                            data-caption="Images automatically resize to fit your viewers screen, so they always look amazing."
+                            src="/img/BullockCart/BullockCart5.jpg" alt=""
+                            data-thumb-image="/img/BullockCart/thumbnails/BullockCart5_sm.jpg?scale.height=60" />
+
+                        <img title="Responsive sizing on every device"
+                            data-caption="Images automatically resize to fit your viewers screen, so they always look amazing."
+                            src="/img/BullockCart/BullockCart6.jpg" alt=""
+                            data-thumb-image="/img/BullockCart/thumbnails/BullockCart6_sm.jpg?scale.height=60" />
+
+                    </div>
+                </div>
+
+                <div class="story-body">
+
+                    <div class="title-holder">
+                        <img src="/img/Logo/bullockcart.png" style="height:100%">
+                    </div>
+
+                    <div class="story-list"><span class="bolder">গরুর গাড়ীতে মায়াপুর দর্শন: </span>গোশালা থেকে গোবিন্দ
+                        রেস্টুরেন্ট পর্যন্ত মায়াপুর ক্যাম্পাস দর্শন।</div>
+                    <div class="story-list"><span class="bolder">মূল্য: </span>১০.০০ টাকা</div>
+                    <div class="story-list"><span class="bolder">ভ্রমনের দূরত্ব: </span>৩০০ মিটার</div>
+
+                </div>
+            </div><br>
+            <hr><br>
+
+
+
+        </div>
+        <hr class="top">
+        <br class="br">
+        <br class="br">
+        <hr class="bottom">
+        <br>
+        <section class="last-footer9329 ">
+
+            <div class="container ">
+
+                <p>@ISKCON-2021</p>
+                <p>Designer & Developer: ISKCON</p>
+                <p>ISKCON Mayapur,741313</p>
+
+            </div>
+
+        </section>
+    </div>
+
+    <!-- ---------------------------------------javascript start------------------------------------------ -->
+
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/magicslideshow.js"></script>
+
+</body>
+
+</html>

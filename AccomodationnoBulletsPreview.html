@@ -1,0 +1,1195 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>ISKCON BANGLA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/magicslideshow.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://souravtest.eu-4.evennode.com/socket.io/socket.io.js"></script>
+
+</head>
+
+<body>
+
+    <!--#####################-----------STARTING NAVBAR PART--------------#####################-->
+
+    <div class="main-container">
+        <div class="cd-main-header">
+
+
+            <div class="hamburger" aria-label="Close" data-tracking-category="Button" data-tracking-action="Click"
+                data-tracking-label="hamburger-menu">
+                <div class="hamburger-line"></div>
+                <div class=" hamburger-line"></div>
+                <div class="hamburger-line"></div>
+            </div>
+
+
+            <!--   <img src="img/search.png" class="search-bar" alt="search bar">-->
+            <div class="todaydate">
+            </div>
+
+
+            <div class="logo">
+                <a class="cd-logo" href="https://www.iskconbangla.com/index.html"><img src="img/iskcon-bangla-logo.jpg "
+                        alt="Logo "></a>
+            </div>
+
+            <!--  <div id="google_translate_element" class="notification"></div>-->
+            <div id="sp" class="notification"><a href="https://www.iskconbangla.com/Prabhupada.html"><img
+                        src="img/sp.jpg" style="width: 45px" alt="search bar"></a></div>
+
+
+            <a href="https://www.iskconbangla.com/tv.html"><img src="img/tv3.png" class="tv" alt="tv"></a>
+
+        </div>
+
+        <hr class="top">
+    </div>
+
+    <!--#####################-----------------------END NAVBAR PART------------------#####################-->
+
+    <!--#####################-----------------------part One-------------------------#####################-->
+    <div class="subnav">
+        <div>
+            <div style="width: 80px"><a href="https://www.iskconbangla.com/index.html">সংবাদ ক্ষেত্র</a></div>
+            <div class="dropdown" style="width: 100px">
+                <button class="dropbtn">মায়াপুর ভ্রমন</button>
+
+                <div class="dropdown-content">
+                    <a href="https://www.iskconbangla.com/Accomodation.html">বাসস্থান</a>
+                    <a href="https://www.iskconbangla.com/Prasadam.html">প্রসাদম</a>
+                    <a href="https://www.iskconbangla.com/Todo.html">কার্যকলাপ</a>
+                    <a href="https://www.iskconbangla.com/Facilities.html">সুযোগ সুবিধা</a>
+                    <a href="https://www.iskconbangla.com/Temple.html">মন্দির</a>
+                    <a href="https://www.iskconbangla.com/MayapurTour.html">মায়াপুর ভ্রমণ</a>
+                </div>
+            </div>
+            <!--<li><a href="https://www.iskconbangla.com/Accomodation.html">বাসস্থান</a></li>
+                <li><a href="https://www.iskconbangla.com/Prasadam.html">প্রসাদম</a></li>
+                <li><a href="https://www.iskconbangla.com/Todo.html">কার্যকলাপ</a></li>
+                <li><a href="https://www.iskconbangla.com/MayapurTour.html">মায়াপুর ভ্রমণ</a></li>
+                <div style="width: 40px"><a href="https://www.iskconbangla.com/Temple.html">মন্দির</a></div>-->
+            <div style="width: 95px"><a href="https://www.iskconbangla.com/JoinUs.html">যোগদান করুন</a></div>
+            <div style="width: 90px"><a href="https://www.iskconbangla.com/bengalitemples.html">মন্দির</a></div>
+            <div style="width: 90px"><a href="https://www.iskconbangla.com/tv.html">মায়াপুর টিভি</a></div>
+            <div style="width: 90px"><a href="https://www.iskconbangla.com/bookshop.html">বইের দোকান</a></div>
+            <div style="width: 65px"><a href="https://www.iskconbangla.com/Prabhupada.html">প্রভুপাদ</a></div>
+        </div>
+        <hr class="bottom">
+    </div>
+
+    <div class="main-container">
+        <div class="hamburger-container" style="display: none">
+            <div class="close-dropdown"><img src="img/fa_closewindow.png" alt="close-dropdown"></div>
+            <div class="hamburger-list"><a href="https://www.iskconbangla.com/index.html">সংবাদ ক্ষেত্র</a></div>
+            <div class="hamburger-list"><a href="https://www.iskconbangla.com/Accomodation.html">বাসস্থান</a></div>
+            <div class="hamburger-list"><a href="https://www.iskconbangla.com/Prasadam.html">প্রসাদম</a></div>
+            <div class="hamburger-list"><a href="https://www.iskconbangla.com/Todo.html">কার্যকলাপ</a></div>
+            <div class="hamburger-list"><a href="https://www.iskconbangla.com/MayapurTour.html">মায়াপুর ভ্রমণ</a></div>
+            <div class="hamburger-list"><a href="https://www.iskconbangla.com/Temple.html">মন্দির</a></div>
+            <div class="hamburger-list"><a href="https://www.iskconbangla.com/JoinUs.html">যোগদান করুন</a></div>
+            <div class="hamburger-list"><a href="https://www.iskconbangla.com/Facilities.html">সুযোগ সুবিধা</a></div>
+            <div class="hamburger-list"><a href="https://www.iskconbangla.com/SmallTemples.html"> ছোট মন্দির</a></div>
+
+        </div>
+        <!--#####################-----------BANNER-------------------------#####################-->
+
+        <div class="head-banner">
+        </div>
+
+        <hr class="bottom">
+
+        <!--#####################-----------NEWS----------------------------#####################-->
+        <!--<div class="container-head">-->
+
+        <!-- /------------------------1st story-----------------------------\ -->
+        <br>
+        <div class="news-story">
+
+            <div class="story-block">
+
+                <div class="story-img">
+                    <!-- <div class="w3-content w3-display-container">
+
+                        <div class="w3-display-container mySlides1">
+                            <img src="/img/ishodyan bhaban 1.jpg" style="width:100%">
+
+                        </div>
+
+                        <div class="w3-display-container mySlides1">
+                            <img src="/img/radha rasamrita 2.jpg" style="width:100%">
+
+                        </div>
+
+                        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 0)">&#10094;</button>
+                        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 0)">&#10095;</button>
+
+                    </div> -->
+
+                    <div class="MagicSlideshow"
+                        data-options="effect: slide-in; bulletsPreview: none; selectors: bottom; caption:false; selectorsEye: false; pause: false; preload: false; autoplay: false; showLoader: true; autostart: false;">
+                        <img title="Touch, tap, swipe" data-image="/img/Ishodyan/iso1.jpg" alt=""
+                            data-caption="Natural touchscreen experience - visitors intuitively feel at ease with your slideshows."
+                            data-thumb-image="/img/Ishodyan/iso1.jpg?scale.height=60" />
+
+                        <img title="Maximum engagement" data-image="/img/Ishodyan/iso2.jpg" alt=""
+                            data-caption="Works beautifully out-of-the-box or optimize 30 popular settings to meet your requirements."
+                            data-thumb-image="/img/Ishodyan/iso2.jpg?scale.height=60" />
+
+                        <img title="Ken Burns gorgeousness"
+                            data-caption="Enable the popular zoom/pan/fade Ken Burns effect - like the one you see on this demo."
+                            data-image="/img/Ishodyan/iso3.jpg" alt=""
+                            data-thumb-image="/img/Ishodyan/iso3.jpg?scale.height=60" />
+
+                        <img title="Responsive sizing on every device"
+                            data-caption="Images automatically resize to fit your viewers screen, so they always look amazing."
+                            data-image="/img/Ishodyan/iso4.jpg" alt=""
+                            data-thumb-image="/img/Ishodyan/iso4.jpg?scale.height=60" />
+
+                        <img title="Responsive sizing on every device"
+                            data-caption="Images automatically resize to fit your viewers screen, so they always look amazing."
+                            data-image="/img/Ishodyan/iso5.jpg" alt=""
+                            data-thumb-image="/img/Ishodyan/iso5.jpg?scale.height=60" />
+
+                        <img title="Responsive sizing on every device"
+                            data-caption="Images automatically resize to fit your viewers screen, so they always look amazing."
+                            data-image="/img/Ishodyan/iso6.jpg" alt=""
+                            data-thumb-image="/img/Ishodyan/iso6.jpg?scale.height=60" />
+
+                        <img title="Responsive sizing on every device"
+                            data-caption="Images automatically resize to fit your viewers screen, so they always look amazing."
+                            data-image="/img/Ishodyan/iso7.jpg" alt=""
+                            data-thumb-image="/img/Ishodyan/iso7.jpg?scale.height=60" />
+
+                        <img title="Responsive sizing on every device"
+                            data-caption="Images automatically resize to fit your viewers screen, so they always look amazing."
+                            data-image="/img/Ishodyan/iso8.jpg" alt=""
+                            data-thumb-image="/img/Ishodyan/iso8.jpg?scale.height=60" />
+
+                        <img title="Responsive sizing on every device"
+                            data-caption="Images automatically resize to fit your viewers screen, so they always look amazing."
+                            data-image="/img/Ishodyan/iso9.jpg" alt=""
+                            data-thumb-image="/img/Ishodyan/iso9.jpg?scale.height=60" />
+
+                        <img title="Responsive sizing on every device"
+                            data-caption="Images automatically resize to fit your viewers screen, so they always look amazing."
+                            data-image="/img/Ishodyan/iso10.jpg" alt=""
+                            data-thumb-image="/img/Ishodyan/iso10.jpg?scale.height=60" />
+
+                        <img title="Responsive sizing on every device"
+                            data-caption="Images automatically resize to fit your viewers screen, so they always look amazing."
+                            data-image="/img/Ishodyan/iso11.jpg" alt=""
+                            data-thumb-image="/img/Ishodyan/iso11.jpg?scale.height=60" />
+
+                        <img title="Responsive sizing on every device"
+                            data-caption="Images automatically resize to fit your viewers screen, so they always look amazing."
+                            data-image="/img/Ishodyan/iso12.jpg" alt=""
+                            data-thumb-image="/img/Ishodyan/iso12.jpg?scale.height=60" />
+
+                        <img title="Responsive sizing on every device"
+                            data-caption="Images automatically resize to fit your viewers screen, so they always look amazing."
+                            data-image="/img/Ishodyan/iso13.jpg" alt=""
+                            data-thumb-image="/img/Ishodyan/iso13.jpg?scale.height=60" />
+
+                        <img title="Responsive sizing on every device"
+                            data-caption="Images automatically resize to fit your viewers screen, so they always look amazing."
+                            data-image="/img/Ishodyan/iso14.jpg" alt=""
+                            data-thumb-image="/img/Ishodyan/iso14.jpg?scale.height=60" />
+
+                        <img title="Responsive sizing on every device"
+                            data-caption="Images automatically resize to fit your viewers screen, so they always look amazing."
+                            data-image="/img/Ishodyan/iso15.jpg" alt=""
+                            data-thumb-image="/img/Ishodyan/iso15.jpg?scale.height=60" />
+
+                        <img title="Responsive sizing on every device"
+                            data-caption="Images automatically resize to fit your viewers screen, so they always look amazing."
+                            data-image="/img/Ishodyan/iso16.jpg" alt=""
+                            data-thumb-image="/img/Ishodyan/iso16.jpg?scale.height=60" />
+                    </div>
+                </div>
+
+                <div class="story-body">
+
+                    <div class="title-holder">
+                        <img src="/img/Logo/isodhyanbhaban.png" style="height:100%">
+                    </div>
+
+                    <div class="story-list"><span class="bolder">রুম বুকিং :</span> <br> ৪ বেড এটাচ -
+                        (৮০০, ১০০০, ১৪৫৬) টাকা <br>৪ বেড এসি - (২০১৬, ২৪০৮) টাকা <br> ২০ জনের হল ঘর - ১৪০০ টাকা</div>
+                    <div class="story-list" type="square"><span class="bolder">প্রসাদ :</span><br>দুপুর - ১২০ টাকা
+                        (দুপুর ১ টা থেকে ১:৩০ মিনিটের মধ্যে),
+                        <br> রাত - ৯০ টাকা (রাত ৮:৩০ থেকে ৯ টার মধ্যে)
+                    </div>
+                    <div class="story-list" type="square"><span class="bolder">যোগাযোগ:</span> +৯১ ৯৪৭৪৭৫১২০২, ০৩৪৭২
+                        ২৪৫৬২০ (সকাল ১০ টা - বিকাল ৫ টা)</div>
+                    <div class="story-list" type="square"><span class="bolder">স্থান:</span> বংশী ভবনের পাশে</div>
+                    <div class="story-list" type="square"><span class="bolder">দূরত্ব:</span> ৩০০ মিটার মূল মন্দির থেকে
+                    </div>
+                    <div class="story-list" type="square"><span class="bolder">ওয়েব সাইট:</span>www.visitmayapur.com
+                    </div>
+                    <div class="story-list" type="square"><span class="bolder">ইমেইল:</span>mghb108@gmail.com</div>
+                    <!-- <div class="sub-logo">
+                        <img src="/img/Logo/sublogo/elevator.png" style="height:100%"> <img
+                            src="img/Logo/sublogo/food.png" alt="" style="height:100%"> <img
+                            src="/img/Logo/sublogo/laundrymachine.png" alt="" style="height:100%"> <img
+                            src="img/Logo/sublogo/watertap.png" alt="" style="height:100%"> <img
+                            src="img/Logo/sublogo/parking.png" alt="" style="height:100%">
+                    </div> -->
+                </div>
+            </div><br>
+            <hr><br>
+
+
+            <!-- /------------------------2nd story-----------------------------\ -->
+
+
+
+
+            <div class="story-block">
+                <div class="story-img">
+
+
+                    <!-- <div class="story-img">
+                    <div class="w3-content w3-display-container">
+
+                        <div class="w3-display-container mySlides8">
+                            <img src="/img/conch bhaban 1.jpg" style="width:100%">
+
+                        </div>
+
+                        <div class="w3-display-container mySlides8">
+                            <img src="/img/conch bhaban 2.jpg" style="width:100%">
+
+                        </div>
+
+
+                        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 7)">&#10094;</button>
+                        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 7)">&#10095;</button>
+
+                    </div> -->
+                    <div class="MagicSlideshow"
+                        data-options="effect: slide-in; bulletsPreview: none;  selectors: bottom; caption:false; selectorsEye: false; pause: false; preload: false; autoplay: false; showLoader: true; autostart: false;">
+                        <img title="Touch, tap, swipe" data-image="/img/conchbuilding/ConchBhaban1.jpg" alt=""
+                            data-caption="Natural touchscreen experience - visitors intuitively feel at ease with your slideshows."
+                            data-thumb-image="/img/conchbuilding/ConchBhaban1.jpg?scale.height=60" />
+
+                        <img title="Maximum engagement" data-image="/img/conchbuilding/ConchBhaban2.jpg" alt=""
+                            data-caption="Works beautifully out-of-the-box or optimize 30 popular settings to meet your requirements."
+                            data-thumb-image="/img/conchbuilding/ConchBhaban2.jpg?scale.height=60" />
+
+                        <img title="Ken Burns gorgeousness"
+                            data-caption="Enable the popular zoom/pan/fade Ken Burns effect - like the one you see on this demo."
+                            data-image="/img/conchbuilding/ConchBhaban3.jpg" alt=""
+                            data-thumb-image="/img/conchbuilding/ConchBhaban3.jpg?scale.height=60" />
+
+                        <img title="Responsive sizing on every device"
+                            data-caption="Images automatically resize to fit your viewers screen, so they always look amazing."
+                            data-image="/img/conchbuilding/ConchBhaban4.jpg" alt=""
+                            data-thumb-image="/img/conchbuilding/ConchBhaban4.jpg?scale.height=60" />
+
+                        <img title="Responsive sizing on every device"
+                            data-caption="Images automatically resize to fit your viewers screen, so they always look amazing."
+                            data-image="/img/conchbuilding/ConchBhaban5.jpg" alt=""
+                            data-thumb-image="/img/conchbuilding/ConchBhaban5.jpg?scale.height=60" />
+
+                        <img title="Responsive sizing on every device"
+                            data-caption="Images automatically resize to fit your viewers screen, so they always look amazing."
+                            data-image="/img/conchbuilding/ConchBhaban6.jpg" alt=""
+                            data-thumb-image="/img/conchbuilding/ConchBhaban6.jpg?scale.height=60" />
+                    </div>
+                </div>
+
+
+                <div class="story-body">
+
+                    <div class="title-holder">
+                        <img src="/img/Logo/conchbhaban.png" style="height:100%">
+                    </div>
+
+                    <div class="story-list" type="square"><span class="bolder">রুম বুকিং: </span>৪ বেড এটাচ - ১৫০০
+                        টাকা
+                        <br>
+                        ৪
+                        বেড
+                        এসি (ডিলাক্স)- ৩৩৬০ টাকা <br> ৪ বেড এসি (সুপার ডিলাক্স)- ৪০০০ টাকা <br> ৪ বেড এসি (সুইট)-
+                        ৫০০০
+                        টাকা
+                    </div>
+                    <div class="story-list" type="square"><span class="bolder">যোগাযোগ :</span>+৯১ ৯৪৭৪৭৫১২০২, ০৩৪৭২
+                        ২৪৫৬২০ (সকাল ১০ টা - বিকাল ৫ টা) </div>
+                    <div class="story-list" type="square"><span class="bolder">স্থান :</span> মায়াপুর চন্দ্রোদয়
+                        মন্দিরের পাশে। </div>
+                    <div class="story-list" type="square"><span class="bolder">ওয়েব সাইট:</span>
+                        www.visitmayapur.com</div>
+                    <div class="story-list" type="square"><span class="bolder">ইমেইল:</span>
+                        mghb108@gmail.com</div>
+                </div>
+            </div><br>
+            <hr><br>
+
+
+            <!-- /------------------------3rd story-----------------------------\ -->
+
+
+
+            <div class="story-block">
+
+                <div class="story-img">
+                    <!-- <div class="w3-content w3-display-container">
+
+                        <div class="w3-display-container mySlides3">
+                            <img src="/img/vamsi bhaban 1.jpg" style="width:100%">
+
+                        </div>
+
+                        <div class="w3-display-container mySlides3">
+                            <img src="/img/vamsi bhaban 2.jpg" style="width:100%">
+
+                        </div>
+
+                        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 2)">&#10094;</button>
+                        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 2)">&#10095;</button>
+
+                    </div> -->
+                    <div class="MagicSlideshow"
+                        data-options="effect: slide-in; bulletsPreview: none; selectors: bottom; caption:false; selectorsEye: false; pause: false; preload: false; autoplay: false; showLoader: true; autostart: false;">
+                        <img title="Touch, tap, swipe" data-image="/img/VamsiBhavan/VamsiBhaban1.jpg" alt=""
+                            data-caption="Natural touchscreen experience - visitors intuitively feel at ease with your slideshows."
+                            data-thumb-image="/img/VamsiBhavan/VamsiBhaban1.jpg?scale.height=60" />
+
+                        <img title="Maximum engagement" data-image="/img/VamsiBhavan/VamsiBhaban2.jpg" alt=""
+                            data-caption="Works beautifully out-of-the-box or optimize 30 popular settings to meet your requirements."
+                            data-thumb-image="/img/VamsiBhavan/VamsiBhaban2.jpg?scale.height=60" />
+
+                        <img title="Ken Burns gorgeousness"
+                            data-caption="Enable the popular zoom/pan/fade Ken Burns effect - like the one you see on this demo."
+                            data-image="/img/VamsiBhavan/VamsiBhaban3.jpg" alt=""
+                            data-thumb-image="/img/VamsiBhavan/VamsiBhaban3.jpg?scale.height=60" />
+
+                        <img title="Responsive sizing on every device"
+                            data-caption="Images automatically resize to fit your viewers screen, so they always look amazing."
+                            data-image="/img/VamsiBhavan/VamsiBhaban4.jpg" alt=""
+                            data-thumb-image="/img/VamsiBhavan/VamsiBhaban4.jpg?scale.height=60" />
+
+                        <img title="Responsive sizing on every device"
+                            data-caption="Images automatically resize to fit your viewers screen, so they always look amazing."
+                            data-image="/img/VamsiBhavan/VamsiBhaban5.jpg" alt=""
+                            data-thumb-image="/img/VamsiBhavan/VamsiBhaban5.jpg?scale.height=60" />
+
+                        <img title="Responsive sizing on every device"
+                            data-caption="Images automatically resize to fit your viewers screen, so they always look amazing."
+                            data-image="/img/VamsiBhavan/VamsiBhaban6.jpg" alt=""
+                            data-thumb-image="/img/VamsiBhavan/VamsiBhaban6.jpg?scale.height=60" />
+
+                        <img title="Responsive sizing on every device"
+                            data-caption="Images automatically resize to fit your viewers screen, so they always look amazing."
+                            data-image="/img/VamsiBhavan/VamsiBhaban7.jpg" alt=""
+                            data-thumb-image="/img/VamsiBhavan/VamsiBhaban7.jpg?scale.height=60" />
+
+                        <img title="Responsive sizing on every device"
+                            data-caption="Images automatically resize to fit your viewers screen, so they always look amazing."
+                            data-image="/img/VamsiBhavan/VamsiBhaban8.jpg" alt=""
+                            data-thumb-image="/img/VamsiBhavan/VamsiBhaban8.jpg?scale.height=60" />
+
+                        <img title="Responsive sizing on every device"
+                            data-caption="Images automatically resize to fit your viewers screen, so they always look amazing."
+                            data-image="/img/VamsiBhavan/VamsiBhaban9.jpg" alt=""
+                            data-thumb-image="/img/VamsiBhavan/VamsiBhaban9.jpg?scale.height=60" />
+
+                    </div>
+                </div>
+                <div class="story-body">
+
+                    <div class="title-holder">
+                        <img src="/img/Logo/vamsibhaban.png" style="height:100%">
+                    </div>
+
+                    <div class="story-list" type="square"><span class="bolder">রুম বুকিং: </span> <br> ৪ বেড
+                        এটাচ - ৮০০
+                        টাকা<br>৬ বেড এটাচ - ১৪৫৬ টাকা<br>৪ বেড এসি - ২৪০৮ টাকা<br>৪ বেড ভিএই পি ঘর - ৪০৪২
+                        টাকা<br>আজীবন
+                        সদস্য: সার্ভিস চার্জ - ১০০ টাকা (প্রতি দিন)</div>
+                    <div class="story-list" type="square"><span class="bolder">যোগাযোগ: </span> +৯১
+                        ৯৪৭৪৭৫১২০২, ০৩৪৭২ ২৪৫৬২০</div>
+                    <div class="story-list" type="square"><span class="bolder">স্থান: </span> ঈশ্বোদ্যানের
+                        আগে</div>
+                    <div class="story-list" type="square"><span class="bolder">দূরত্ব: </span> ২৫০ মিটার মূল
+                        মন্দির থেকে</div>
+                    <div class="story-list" type="square"><span class="bolder">ইমেইল:
+                        </span>mghb108@gmail.com</div>
+                </div>
+
+            </div><br>
+            <hr><br>
+
+
+            <!--/------------------------4th story-----------------------------\ -->
+
+
+
+            <div class="story-block">
+
+                <div class="story-img">
+                    <!-- <div class="w3-content w3-display-container">
+
+                        <div class="w3-display-container mySlides4">
+                            <img src="/img/gada bhaban 1.jpg" style="width:100%">
+                        </div>
+
+                        <div class="w3-display-container mySlides4">
+                            <img src="/img/gada bhaban 2.jpg" style="width:100%">
+                        </div>
+
+                        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 3)">&#10094;</button>
+                        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 3)">&#10095;</button>
+
+                    </div> -->
+                    <div class="MagicSlideshow"
+                        data-options="effect: slide-in; bulletsPreview: none; selectors: bottom; caption:false; selectorsEye: false; pause: false; preload: false; autoplay: false; showLoader: true; autostart: false;">
+                        <img title="Touch, tap, swipe" data-image="/img/gadabhaban/gada1.jpg" alt=""
+                            data-caption="Natural touchscreen experience - visitors intuitively feel at ease with your slideshows."
+                            data-thumb-image="/img/gadabhaban/gada1.jpg?scale.height=60" />
+
+                        <img title="Maximum engagement" data-image="/img/gadabhaban/gada2.jpg" alt=""
+                            data-caption="Works beautifully out-of-the-box or optimize 30 popular settings to meet your requirements."
+                            data-thumb-image="/img/gadabhaban/gada2.jpg?scale.height=60" />
+
+                        <img title="Ken Burns gorgeousness"
+                            data-caption="Enable the popular zoom/pan/fade Ken Burns effect - like the one you see on this demo."
+                            data-image="/img/gadabhaban/gada3.jpg" alt=""
+                            data-thumb-image="/img/gadabhaban/gada3.jpg?scale.height=60" />
+
+                        <img title="Responsive sizing on every device"
+                            data-caption="Images automatically resize to fit your viewers screen, so they always look amazing."
+                            data-image="/img/gadabhaban/gada4.jpg" alt=""
+                            data-thumb-image="/img/gadabhaban/gada4.jpg?scale.height=60" />
+
+                        <img title="Responsive sizing on every device"
+                            data-caption="Images automatically resize to fit your viewers screen, so they always look amazing."
+                            data-image="/img/gadabhaban/gada5.jpg" alt=""
+                            data-thumb-image="/img/gadabhaban/gada5.jpg?scale.height=60" />
+
+                        <img title="Responsive sizing on every device"
+                            data-caption="Images automatically resize to fit your viewers screen, so they always look amazing."
+                            data-image="/img/gadabhaban/gada6.jpg" alt=""
+                            data-thumb-image="/img/gadabhaban/gada6.jpg?scale.height=60" />
+
+                        <img title="Responsive sizing on every device"
+                            data-caption="Images automatically resize to fit your viewers screen, so they always look amazing."
+                            data-image="/img/gadabhaban/gada7.jpg" alt=""
+                            data-thumb-image="/img/gadabhaban/gada7.jpg?scale.height=60" />
+
+                        <img title="Responsive sizing on every device"
+                            data-caption="Images automatically resize to fit your viewers screen, so they always look amazing."
+                            data-image="/img/gadabhaban/gada8.jpg" alt=""
+                            data-thumb-image="/img/gadabhaban/gada8.jpg?scale.height=60" />
+
+                    </div>
+                </div>
+
+                <div class="story-body">
+
+                    <div class="title-holder">
+                        <img src="/img/Logo/gadabhaban.png" style="height:100%">
+                    </div>
+
+                    <div class="story-list" type="square"><span class="bolder">রুম বুকিং: </span> ২ বেড এটাচ
+                        - ৫০০ টাকা <br> ৪ বেড এটাচ - ৭০০, ১০০০ টাকা <br> ৪ বেড এসি - (২৪০৮ - ৫০০০) টাকা
+                    </div>
+                    <div class="story-list" type="square"><span class="bolder">প্রসাদ: </span> দুপুর - ৮০
+                        টাকা (সময়: দুপুর ১:০০ টা - ১:৩০ মি), রাত - ৫০ টাকা (সময়: রাত ৮:৩০ - ৯:০০ টা)</div>
+                    <div class="story-list" type="square"><span class="bolder">যোগাযোগ: </span>+৯১ ৯৪৭৪৭৫১২০২, ০৩৪৭২
+                        ২৪৫৬২০ (সকাল ১০:০০ টা - বিকাল ৫:০০ টা)
+                    </div>
+                    <div class="story-list" type="square"><span class="bolder">স্থান: </span>চক্র ভবনের পিছনে</div>
+                    <div class="story-list" type="square"><span class="bolder">দূরত্ব: </span>২০০ মিটার মূল মন্দির থেকে
+                    </div>
+                    <div class="story-list" type="square"><span class="bolder">ওয়েব সাইট:</span>www.visitmayapur.com
+                    </div>
+                    <div class="story-list" type="square"><span class="bolder">গ্রুপ বুকিং/ দীর্ঘ দিনের বুকিং:
+                        </span>gprb108@gmail.com</div>
+                    <div class="story-list" type="square"><span class="bolder">ইমেইল:
+                        </span>mghb108@gmail.com</div>
+                </div>
+            </div><br>
+            <hr><br>
+
+
+            <!--/------------------------5th story-----------------------------\ -->
+
+
+
+
+
+            <div class="story-block">
+
+                <div class="story-img">
+                    <!-- <div class="w3-content w3-display-container">
+
+                        <div class="w3-display-container mySlides12">
+                            <img src="/img/atithi bhaban 1.jpg" style="width:100%">
+
+                        </div>
+
+                        <div class="w3-display-container mySlides12">
+                            <img src="/img/atithi bhaban 2.jpg" style="width:100%">
+
+                        </div>
+
+                        <div class="w3-display-container mySlides12">
+                            <img src="/img/atithi bhaban 3.jpg" style="width:100%">
+
+                        </div>
+
+                        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 11)">&#10094;</button>
+                        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 11)">&#10095;</button>
+
+                    </div> -->
+                    <div class="MagicSlideshow"
+                        data-options="effect: slide-in; bulletsPreview: none; selectors: bottom; caption:false; selectorsEye: false; pause: false; preload: false; autoplay: false; showLoader: true; autostart: false;">
+                        <img title="Touch, tap, swipe" data-image="/img/atithibhaban/AtithiBhaban1.jpg" alt=""
+                            data-caption="Natural touchscreen experience - visitors intuitively feel at ease with your slideshows."
+                            data-thumb-image="/img/atithibhaban/AtithiBhaban1.jpg?scale.height=60" />
+
+                        <img title="Maximum engagement" data-image="/img/atithibhaban/AtithiBhaban2.jpg" alt=""
+                            data-caption="Works beautifully out-of-the-box or optimize 30 popular settings to meet your requirements."
+                            data-thumb-image="/img/atithibhaban/AtithiBhaban2.jpg?scale.height=60" />
+
+                        <img title="Ken Burns gorgeousness"
+                            data-caption="Enable the popular zoom/pan/fade Ken Burns effect - like the one you see on this demo."
+                            data-image="/img/atithibhaban/AtithiBhaban3.jpg" alt=""
+                            data-thumb-image="/img/atithibhaban/AtithiBhaban3.jpg?scale.height=60" />
+
+                        <img title="Responsive sizing on every device"
+                            data-caption="Images automatically resize to fit your viewers screen, so they always look amazing."
+                            data-image="/img/atithibhaban/AtithiBhaban4.jpg" alt=""
+                            data-thumb-image="/img/atithibhaban/AtithiBhaban4.jpg?scale.height=60" />
+
+                    </div>
+                </div>
+
+                <div class="story-body">
+
+                    <div class="title-holder">
+                        <img src="/img/Logo/atithibhaban.png" style="height:100%">
+                    </div>
+
+                    <div class="story-list" type="square"><span class="bolder">রুম বুকিং: </span><br>৪ বেড
+                        এটাচ - ৮০০ টাকা <br> ৪বেড এসি - ২০০০ টাকা <br> ৬ বেড এসি - ২৫০০ টাকা </div>
+                    <div class="story-list" type="square"><span class="bolder">যোগাযোগ:
+                        </span><br>৭৫০১৮৩৪৩৮৩</div>
+                    <div class="story-list" type="square"><span class="bolder">স্থান: </span>গদা ভবনের পাশে
+                    </div>
+                    <div class="story-list" type="square"><span class="bolder">দূরত্ব: </span>২০০ মিটার মূল
+                        মন্দির থেকে</div>
+                    <div class="story-list" type="square"><span class="bolder">ওয়েব সাইট: </span>২০০ মিটার
+                        মূল মন্দির থেকে</div>
+                    <div class="story-list" type="square"><span class="bolder">ইমেইল:</span>gh.iskcon@gmail.com </div>
+                </div>
+            </div><br>
+            <hr><br>
+
+
+
+            <!--/------------------------7th story-----------------------------\ -->
+
+
+
+            <div class="story-block">
+                <div class="story-img">
+                    <!--<div class="story-img">
+                            <div class="w3-content w3-display-container">
+        
+                                <div class="w3-display-container mySlides7">
+                                    <img src="/img/namhatta bhaban 1.jpg" style="width:100%">
+        
+                                </div>
+        
+                                <div class="w3-display-container mySlides7">
+                                    <img src="/img/namhatta bhaban 2.jpg" style="width:100%">
+        
+                                </div>
+        
+        
+                                <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 6)">&#10094;</button>
+                                <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 6)">&#10095;</button>
+        
+                            </div> -->
+                    <div class="MagicSlideshow"
+                        data-options="effect: slide-in; bulletsPreview: none; selectors: bottom; caption:false; selectorsEye: false; pause: false; preload: false; autoplay: false; showLoader: true; autostart: false;">
+                        <img title="Touch, tap, swipe" data-image="/img/namhattabhaban/namhattabhaban1.jpg" alt=""
+                            data-caption="Natural touchscreen experience - visitors intuitively feel at ease with your slideshows."
+                            data-thumb-image="/img/namhattabhaban/namhattabhaban1.jpg?scale.height=60" />
+
+                        <img title="Maximum engagement" data-image="/img/namhattabhaban/namhattabhaban2.jpg" alt=""
+                            data-caption="Works beautifully out-of-the-box or optimize 30 popular settings to meet your requirements."
+                            data-thumb-image="/img/namhattabhaban/namhattabhaban2.jpg?scale.height=60" />
+
+                        <img title="Maximum engagement" data-image="/img/namhattabhaban/namhattabhaban3.jpg" alt=""
+                            data-caption="Works beautifully out-of-the-box or optimize 30 popular settings to meet your requirements."
+                            data-thumb-image="/img/namhattabhaban/namhattabhaban3.jpg?scale.height=60" />
+
+                    </div>
+                </div>
+
+
+                <div class="story-body">
+
+                    <div class="title-holder">
+                        <img data-image="/img/Logo/namhattabhaban.png" style="height:100%">
+                    </div>
+
+                    <div class="story-list" type="square"><span class="bolder">রুম বুকিং: </span> <br>
+                        নামহট্টে শুধুমাত্র নামহট্টের ভক্তরা থাকতে পারে</div>
+                    <div class="story-list" type="square"><span class="bolder">দূরত্ব: </span> <br> ২৫০
+                        মিটার মূল মন্দির থেকে</div>
+                </div>
+            </div><br>
+            <hr><br>
+
+
+
+            <!--/------------------------8th story-----------------------------\ -->
+
+
+
+
+            <div class="story-block">
+
+                <div class="story-img">
+                    <!-- <div class="w3-content w3-display-container">
+
+                        <div class="w3-display-container mySlides2">
+                            <img src="/img/gita bhaban 1.jpg" style="width:100%">
+
+                        </div>
+
+                        <div class="w3-display-container mySlides2">
+                            <img src="/img/gita bhaban 2.jpg" style="width:100%">
+
+                        </div>
+
+                        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 1)">&#10094;</button>
+                        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 1)">&#10095;</button>
+
+                    </div> -->
+                    <div class="MagicSlideshow"
+                        data-options="effect: slide-in; bulletsPreview: none; selectors: bottom; caption:false; selectorsEye: false; pause: false; preload: false; autoplay: false; showLoader: true; autostart: false;">
+                        <img title="Touch, tap, swipe" data-image="/img/GitaBhavan/gitabhaban1.jpg" alt=""
+                            data-caption="Natural touchscreen experience - visitors intuitively feel at ease with your slideshows."
+                            data-thumb-image="/img/GitaBhavan/gitabhaban1.jpg?scale.height=60" />
+
+                        <img title="Maximum engagement" data-image="/img/GitaBhavan/gitabhaban2.jpg" alt=""
+                            data-caption="Works beautifully out-of-the-box or optimize 30 popular settings to meet your requirements."
+                            data-thumb-image="/img/GitaBhavan/gitabhaban2.jpg?scale.height=60" />
+
+                        <img title="Ken Burns gorgeousness"
+                            data-caption="Enable the popular zoom/pan/fade Ken Burns effect - like the one you see on this demo."
+                            data-image="/img/GitaBhavan/gitabhaban3.jpg" alt=""
+                            data-thumb-image="/img/GitaBhavan/gitabhaban3.jpg?scale.height=60" />
+
+                        <img title="Responsive sizing on every device"
+                            data-caption="Images automatically resize to fit your viewers screen, so they always look amazing."
+                            data-image="/img/GitaBhavan/gitabhaban4.jpg" alt=""
+                            data-thumb-image="/img/GitaBhavan/gitabhaban4.jpg?scale.height=60" />
+
+                        <img title="Responsive sizing on every device"
+                            data-caption="Images automatically resize to fit your viewers screen, so they always look amazing."
+                            data-image="/img/GitaBhavan/gitabhaban5.jpg" alt=""
+                            data-thumb-image="/img/GitaBhavan/gitabhaban5.jpg?scale.height=60" />
+
+                        <img title="Responsive sizing on every device"
+                            data-caption="Images automatically resize to fit your viewers screen, so they always look amazing."
+                            data-image="/img/GitaBhavan/gitabhaban6.jpg" alt=""
+                            data-thumb-image="/img/GitaBhavan/gitabhaban6.jpg?scale.height=60" />
+
+                        <img title="Responsive sizing on every device"
+                            data-caption="Images automatically resize to fit your viewers screen, so they always look amazing."
+                            data-image="/img/GitaBhavan/gitabhaban7.jpg" alt=""
+                            data-thumb-image="/img/GitaBhavan/gitabhaban7.jpg?scale.height=60" />
+                    </div>
+                </div>
+
+                <div class="story-body">
+
+                    <div class="title-holder">
+                        <img src="/img/Logo/gitabhaban.png" style="height:100%">
+                    </div>
+
+                    <div class="story-list" type="square"><span class="bolder">রুম বুকিং :</span> <br> ৪ বেড
+                        কমন - ৪০০
+                        টাকা<br>৫ জনের হল ঘর - ৪০০ টাকা<br>২০ জনের হল ঘর - ১৪০০ টাকা <br> ৪ বেড এটাচ - ৮০০
+                        টাকা <br>৬
+                        বেড
+                        এটাচ - ১০০০ টাকা <br> ৪ বেড এসি - ২০০০ টাকা <br> ৬ বেড এসি - ২৫০০ টাকা</div>
+                    <div class="story-list" type="square"><span class="bolder">প্রসাদ :</span> <br> দুপুর -
+                        ৬০ টাকা
+                        (দুপুর
+                        ১:০০ টা - ১:৩০ মিনিটের মধ্যে) <br> রাত - ৪০ টাকা (রাত ৮:০০ টা - ৮:৩০ মিনিটের মধ্যে)
+                    </div>
+                    <div class="story-list" type="square"><span class="bolder">যোগাযোগ :</span>০৩৪৭২ ২৪৫০৬৪
+                    </div>
+                    <div class="story-list" type="square"><span class="bolder">স্থান :</span>বংশী ভবনের
+                        নিকটে</div>
+                    <div class="story-list" type="square"><span class="bolder">দূরত্ব :</span>৩০০ মিটার মূল মন্দির থেকে
+                    </div>
+                    <div class="story-list" type="square"><span class="bolder">ইমেইল :</span> </div>
+                </div>
+            </div><br>
+            <hr><br>
+
+
+            <!--/------------------------8th story-----------------------------\ -->
+
+
+            <div class="story-block">
+
+                <div class="story-img">
+                    <!-- <div class="w3-content w3-display-container">
+
+                        <div class="w3-display-container mySlides5">
+                            <img src="/img/chaitanya bhaban 1.jpg" style="width:100%">
+
+                        </div>
+
+                        <div class="w3-display-container mySlides5">
+                            <img src="/img/chaitanya bhaban 2.jpg" style="width:100%">
+
+                        </div>
+
+                        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 4)">&#10094;</button>
+                        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 4)">&#10095;</button>
+
+                    </div> -->
+                    <div class="MagicSlideshow"
+                        data-options="effect: slide-in; bulletsPreview: none;  selectors: bottom; caption:false; selectorsEye: false; pause: false; preload: false; autoplay: false; showLoader: true; autostart: false;">
+                        <img title="Touch, tap, swipe" data-image="/img/chaitanyabhaban/ChaitanyaBhaban1.jpg" alt=""
+                            data-caption="Natural touchscreen experience - visitors intuitively feel at ease with your slideshows."
+                            data-thumb-image="/img/chaitanyabhaban/ChaitanyaBhaban1.jpg?scale.height=60" />
+
+                        <img title="Maximum engagement" data-image="/img/chaitanyabhaban/ChaitanyaBhaban2.jpg" alt=""
+                            data-caption="Works beautifully out-of-the-box or optimize 30 popular settings to meet your requirements."
+                            data-thumb-image="/img/chaitanyabhaban/ChaitanyaBhaban2.jpg?scale.height=60" />
+
+                        <img title="Maximum engagement" data-image="/img/chaitanyabhaban/ChaitanyaBhaban3.jpg" alt=""
+                            data-caption="Works beautifully out-of-the-box or optimize 30 popular settings to meet your requirements."
+                            data-thumb-image="/img/chaitanyabhaban/ChaitanyaBhaban3.jpg?scale.height=60" />
+
+                    </div>
+                </div>
+
+                <div class="story-body">
+
+                    <div class="title-holder">
+                        <img src="/img/Logo/chaitanyabhaban.png" style="height:100%">
+                    </div>
+
+                    <div class="story-list" type="square"><span class="bolder">রুম বুকিং: </span> <br> ৪ বেড
+                        কমন - ৩৫০
+                        টাকা
+                        <br> ৬ বেড কমন - ৪৫০ টাকা <br> ৮ বেড কমন - ৫০০ টাকা <br>১৬ জনের হল ঘর - ৭০০ টাকা
+                        <br> ৪ বেড এসি - ১৫০০ টাকা <br> ৬ বেড এসি - ১৯০০ টাকা
+                    </div>
+                    <div class="story-list" type="square"><span class="bolder">যোগাযোগ : </span>০৩৪৭২ ২৪৫০৬৪ </div>
+                    <div class="story-list" type="square"><span class="bolder">প্রসাদ : </span>গীতা প্রসাদ কুপন -
+                        রিসেপশন</div>
+                    <div class="story-list" type="square"><span class="bolder">স্থান : </span>গদা ভবনের পিছনে</div>
+                    <div class="story-list" type="square"><span class="bolder">দূরত্ব : </span>২৫০ মিটার মূল মন্দির থেকে
+                    </div>
+                    <div class="story-list" type="square"><span class="bolder">ইমেইল: </span>২৫০ মিটার মূল মন্দির থেকে
+                    </div>
+                </div>
+            </div><br>
+            <hr><br>
+
+
+            <!--/------------------------9th story-----------------------------\ -->
+
+
+            <div class="story-block">
+
+                <div class="story-img">
+                    <!-- <div class="w3-content w3-display-container">
+
+                        <div class="w3-display-container mySlides11">
+                            <img src="/img/gournitai dharmashala 1.jpg" style="width:100%">
+
+                        </div>
+
+                        <div class="w3-display-container mySlides11">
+                            <img src="/img/gournitai dharmashala 2.jpg" style="width:100%">
+
+                        </div>
+
+                        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 10)">&#10094;</button>
+                        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 10)">&#10095;</button>
+
+                    </div> -->
+                    <div class="MagicSlideshow"
+                        data-options="effect: slide-in; bulletsPreview: none; selectors: bottom; caption:false; selectorsEye: false; pause: false; preload: false; autoplay: false; showLoader: true; autostart: false;">
+                        <img title="Touch, tap, swipe" data-image="/img/gaurnitaidharmshalla/GourNitaiDharmashala1.jpg" alt=""
+                            data-caption="Natural touchscreen experience - visitors intuitively feel at ease with your slideshows."
+                            data-thumb-image="/img/gaurnitaidharmshalla/GourNitaiDharmashala1.jpg?scale.height=60" />
+
+                        <img title="Maximum engagement" data-image="/img/gaurnitaidharmshalla/GourNitaiDharmashala2.jpg" alt=""
+                            data-caption="Works beautifully out-of-the-box or optimize 30 popular settings to meet your requirements."
+                            data-thumb-image="/img/gaurnitaidharmshalla/GourNitaiDharmashala2.jpg?scale.height=60" />
+
+                        <img title="Ken Burns gorgeousness"
+                            data-caption="Enable the popular zoom/pan/fade Ken Burns effect - like the one you see on this demo."
+                            data-image="/img/gaurnitaidharmshalla/GourNitaiDharmashala3.jpg" alt=""
+                            data-thumb-image="/img/gaurnitaidharmshalla/GourNitaiDharmashala3.jpg?scale.height=60" />
+
+                        <img title="Responsive sizing on every device"
+                            data-caption="Images automatically resize to fit your viewers screen, so they always look amazing."
+                            data-image="/img/gaurnitaidharmshalla/GourNitaiDharmashala4.jpg" alt=""
+                            data-thumb-image="/img/gaurnitaidharmshalla/GourNitaiDharmashala4.jpg?scale.height=60" />
+
+                        <img title="Responsive sizing on every device"
+                            data-caption="Images automatically resize to fit your viewers screen, so they always look amazing."
+                            data-image="/img/gaurnitaidharmshalla/GourNitaiDharmashala5.jpg" alt=""
+                            data-thumb-image="/img/gaurnitaidharmshalla/GourNitaiDharmashala5.jpg?scale.height=60" />
+
+                        <img title="Responsive sizing on every device"
+                            data-caption="Images automatically resize to fit your viewers screen, so they always look amazing."
+                            data-image="/img/gaurnitaidharmshalla/GourNitaiDharmashala6.jpg" alt=""
+                            data-thumb-image="/img/gaurnitaidharmshalla/GourNitaiDharmashala6.jpg?scale.height=60" />
+
+                    </div>
+                </div>
+
+                <div class="story-body">
+
+                    <div class="title-holder">
+                        <img src="/img/Logo/gaurnitaidharmashala.png" style="height:100%">
+                    </div>
+
+                    <div class="story-list" type="square"><span class="bolder">রুম বুকিং: </span><br>৪ বেড কমন - ২০০
+                        টাকা <br>৪ বেড কমন - ১০০ টাকা <br> ১০ বেড কমন - ৩০০ টাকা</div>
+                    <div class="story-list" type="square"><span class="bolder">যোগাযোগ: </span><br>+৯১ ৯৮৫১৯৫৮৩৫৫</div>
+                    <div class="story-list" type="square"><span class="bolder">স্থান: </span><br>নামহট্টের পাশে</div>
+                    <div class="story-list" type="square"><span class="bolder">দূরত্ব: </span><br>২২০ মিটার মূল মন্দির
+                        থেকে</div>
+                </div>
+            </div><br>
+            <hr><br>
+
+
+            <!--/------------------------10th story-----------------------------\ -->
+
+            <div class="story-block">
+
+                <div class="story-img">
+                    <!-- <div class="w3-content w3-display-container">
+
+                        <div class="w3-display-container mySlides10">
+                            <img src="/img/gouranga kuthir 1.jpg" style="width:100%">
+
+                        </div>
+
+                        <div class="w3-display-container mySlides10">
+                            <img src="/img/nityananda kuthir 2.jpg" style="width:100%">
+
+                        </div>
+
+                        <div class="w3-display-container mySlides10">
+                            <img src="/img/nityananda kuthir 3.jpg" style="width:100%">
+
+                        </div>
+
+                        <div class="w3-display-container mySlides10">
+                            <img src="/img/nityananda kuthir 4.jpg" style="width:100%">
+
+                        </div>
+
+
+                        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 9)">&#10094;</button>
+                        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 9)">&#10095;</button>
+
+                    </div> -->
+                    <div class="MagicSlideshow"
+                        data-options="effect: slide-in; bulletsPreview: none; selectors: bottom; bulletsPreview:none; caption:false; selectorsEye: false; pause: false; preload: false; autoplay: false; showLoader: true; autostart: false;">
+                        <img title="Touch, tap, swipe" data-image="/img/GourangaKutir/GourangaKuthir1.jpg" alt=""
+                            data-caption="Natural touchscreen experience - visitors intuitively feel at ease with your slideshows."
+                            data-thumb-image="/img/GourangaKutir/GourangaKuthir1.jpg?scale.height=60" />
+
+                        <img title="Maximum engagement" data-image="/img/GourangaKutir/GourangaKuthir2.jpg" alt=""
+                            data-caption="Works beautifully out-of-the-box or optimize 30 popular settings to meet your requirements."
+                            data-thumb-image="/img/GourangaKutir/GourangaKuthir2.jpg?scale.height=60" />
+
+                        <img title="Ken Burns gorgeousness"
+                            data-caption="Enable the popular zoom/pan/fade Ken Burns effect - like the one you see on this demo."
+                            data-image="/img/GourangaKutir/GourangaKuthir3.jpg" alt=""
+                            data-thumb-image="/img/GourangaKutir/GourangaKuthir3.jpg?scale.height=60" />
+
+                        <img title="Responsive sizing on every device"
+                            data-caption="Images automatically resize to fit your viewers screen, so they always look amazing."
+                            data-image="/img/GourangaKutir/GourangaKuthir4.jpg" alt=""
+                            data-thumb-image="/img/GourangaKutir/GourangaKuthir4.jpg?scale.height=60" />
+
+                        <img title="Responsive sizing on every device"
+                            data-caption="Images automatically resize to fit your viewers screen, so they always look amazing."
+                            data-image="/img/GourangaKutir/GourangaKuthir5.jpg" alt=""
+                            data-thumb-image="/img/GourangaKutir/GourangaKuthir5.jpg?scale.height=60" />
+
+                        <img title="Responsive sizing on every device"
+                            data-caption="Images automatically resize to fit your viewers screen, so they always look amazing."
+                            data-image="/img/GourangaKutir/GourangaKuthir6.jpg" alt=""
+                            data-thumb-image="/img/GourangaKutir/GourangaKuthir6.jpg?scale.height=60" />
+
+                        <img title="Responsive sizing on every device"
+                            data-caption="Images automatically resize to fit your viewers screen, so they always look amazing."
+                            data-image="/img/GourangaKutir/GourangaKuthir7.jpg" alt=""
+                            data-thumb-image="/img/GourangaKutir/GourangaKuthir7.jpg?scale.height=60" />
+
+                    </div>
+                </div>
+
+                <div class="story-body">
+
+                    <div class="title-holder">
+                        <img src="/img/Logo/gourangakuthir.png" style="height:100%">
+                    </div>
+
+                    <div class="story-list" type="square"><span class="bolder">রুম বুকিং: </span><br>৪ বেড কমন - ১০০
+                        টাকা <br> ৪ বেড এটাচ - ২৫০ টাকা</div>
+                    <div class="story-list" type="square"><span class="bolder">যোগাযোগ: </span><br>+৯১ ৭৭৯৭৮৫৮৮৫৫, ০৩৪৭২
+                        ২৪৫০৪৩</div>
+                    <div class="story-list" type="square"><span class="bolder">স্থান: </span><br>গোবিন্দাস রেস্টুরেন্টের
+                        পাশে</div>
+                    <div class="story-list" type="square"><span class="bolder">দূরত্ব: </span><br>১৫০ মিটার মূল মন্দির
+                        থেকে</div>
+                </div>
+            </div><br>
+            <hr><br>
+
+
+            <!--/------------------------11th story-----------------------------\ -->
+
+
+
+            <div class="story-block">
+
+                <div class="story-img">
+                    <!-- <div class="w3-content w3-display-container">
+
+                        <div class="w3-display-container mySlides9">
+                            <img src="/img/nityananda kuthir 1.jpg" style="width:100%">
+
+                        </div>
+
+                        <div class="w3-display-container mySlides9">
+                            <img src="/img/nityananda kuthir 2.jpg" style="width:100%">
+
+                        </div>
+
+                        <div class="w3-display-container mySlides9">
+                            <img src="/img/nityananda kuthir 3.jpg" style="width:100%">
+
+                        </div>
+
+                        <div class="w3-display-container mySlides9">
+                            <img src="/img/nityananda kuthir 4.jpg" style="width:100%">
+
+                        </div>
+
+
+                        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 8)">&#10094;</button>
+                        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 8)">&#10095;</button>
+
+                    </div> -->
+                    <div class="MagicSlideshow"
+                        data-options="effect: slide-in; bulletsPreview: none; selectors: bottom; bulletsPreview:none; caption:false; selectorsEye: false; pause: false; preload: false; autoplay: false; showLoader: true; autostart: false;">
+                        <img title="Touch, tap, swipe" data-image="/img/NittyanadaKutir/NityanandaKuthir1.jpg" alt=""
+                            data-caption="Natural touchscreen experience - visitors intuitively feel at ease with your slideshows."
+                            data-thumb-image="/img/NittyanadaKutir/NityanandaKuthir1.jpg?scale.height=60" />
+
+                        <img title="Maximum engagement" data-image="/img/NittyanadaKutir/NityanandaKuthir2.jpg" alt=""
+                            data-caption="Works beautifully out-of-the-box or optimize 30 popular settings to meet your requirements."
+                            data-thumb-image="/img/NittyanadaKutir/NityanandaKuthir2.jpg?scale.height=60" />
+
+                        <img title="Ken Burns gorgeousness"
+                            data-caption="Enable the popular zoom/pan/fade Ken Burns effect - like the one you see on this demo."
+                            data-image="/img/NittyanadaKutir/NityanandaKuthir3.jpg" alt=""
+                            data-thumb-image="/img/NittyanadaKutir/NityanandaKuthir3.jpg?scale.height=60" />
+
+                        <img title="Responsive sizing on every device"
+                            data-caption="Images automatically resize to fit your viewers screen, so they always look amazing."
+                            data-image="/img/NittyanadaKutir/NityanandaKuthir4.jpg" alt=""
+                            data-thumb-image="/img/NittyanadaKutir/NityanandaKuthir4.jpg?scale.height=60" />
+
+                        <img title="Responsive sizing on every device"
+                            data-caption="Images automatically resize to fit your viewers screen, so they always look amazing."
+                            data-image="/img/NittyanadaKutir/NityanandaKuthir5.jpg" alt=""
+                            data-thumb-image="/img/NittyanadaKutir/NityanandaKuthir5.jpg?scale.height=60" />
+
+                        <img title="Responsive sizing on every device"
+                            data-caption="Images automatically resize to fit your viewers screen, so they always look amazing."
+                            data-image="/img/NittyanadaKutir/NityanandaKuthir6.jpg" alt=""
+                            data-thumb-image="/img/NittyanadaKutir/NityanandaKuthir6.jpg?scale.height=60" />
+
+                        <img title="Responsive sizing on every device"
+                            data-caption="Images automatically resize to fit your viewers screen, so they always look amazing."
+                            data-image="/img/NittyanadaKutir/NityanandaKuthir7.jpg" alt=""
+                            data-thumb-image="/img/NittyanadaKutir/NityanandaKuthir7.jpg?scale.height=60" />
+
+                        <img title="Responsive sizing on every device"
+                            data-caption="Images automatically resize to fit your viewers screen, so they always look amazing."
+                            data-image="/img/NittyanadaKutir/NityanandaKuthir8.jpg" alt=""
+                            data-thumb-image="/img/NittyanadaKutir/NityanandaKuthir8.jpg?scale.height=60" />
+                    </div>
+                </div>
+
+                <div class="story-body">
+
+                    <div class="title-holder">
+                        <img src="/img/Logo/nityanandakuthir.png" style="height:100%">
+                    </div>
+
+                    <div class="story-list" type="square"><span class="bolder">রুম বুকিং: </span><br>৪ বেড কমন - ২০০
+                        টাকা</div>
+                    <div class="story-list" type="square"><span class="bolder">যোগাযোগ :</span> +৯১ ৭৭৯৭৮৫৮৮৫৫, ০৩৪৭২
+                        ২৪৫০৪৩ </div>
+                    <div class="story-list" type="square"><span class="bolder">স্থান :</span> গোশালা যাবার রাস্তায়
+                    </div>
+                    <div class="story-list" type="square"><span class="bolder">দূরত্ব :</span> ২৫০ মিটার মূল মন্দির থেকে
+                    </div>
+                </div>
+            </div><br>
+            <hr><br>
+
+            <!--/------------------------12th story-----------------------------\ -->
+
+
+            <div class="story-block">
+
+                <div class="story-img">
+                    <!-- <div class="w3-content w3-display-container">
+
+                        <div class="w3-display-container mySlides6">
+                            <img src="/img/sruti bhaban 1.jpg" style="width:100%">
+
+                        </div>
+
+                        <div class="w3-display-container mySlides6">
+                            <img src="/img/sruti bhaban 2.jpg" style="width:100%">
+
+                        </div>
+                        <div class="w3-display-container mySlides6">
+                            <img src="/img/sruti bhaban 3.jpg" style="width:100%">
+
+                        </div>
+                        <div class="w3-display-container mySlides6">
+                            <img src="/img/sruti bhaban 4.jpg" style="width:100%">
+
+                        </div>
+                        <div class="w3-display-container mySlides6">
+                            <img src="/img/sruti bhaban 5.jpg" style="width:100%">
+
+                        </div>
+
+                        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 5)">&#10094;</button>
+                        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 5)">&#10095;</button>
+
+                    </div> -->
+                    <div class="MagicSlideshow"
+                        data-options="effect: slide-in; bulletsPreview: none; selectors: bottom; bulletsPreview:none; caption:false; selectorsEye: false; pause: false; preload: false; autoplay: false; showLoader: true; autostart: false;">
+                        <img title="Touch, tap, swipe" data-image="/img/srutibhavan/SrutiBhaban1.jpg" alt=""
+                            data-caption="Natural touchscreen experience - visitors intuitively feel at ease with your slideshows."
+                            data-thumb-image="/img/srutibhavan/SrutiBhaban1.jpg?scale.height=60" />
+
+                        <img title="Maximum engagement" data-image="/img/srutibhavan/SrutiBhaban2.jpg" alt=""
+                            data-caption="Works beautifully out-of-the-box or optimize 30 popular settings to meet your requirements."
+                            data-thumb-image="/img/srutibhavan/SrutiBhaban2.jpg?scale.height=60" />
+
+                        <img title="Ken Burns gorgeousness"
+                            data-caption="Enable the popular zoom/pan/fade Ken Burns effect - like the one you see on this demo."
+                            data-image="/img/srutibhavan/SrutiBhaban3.jpg" alt=""
+                            data-thumb-image="/img/srutibhavan/SrutiBhaban3.jpg?scale.height=60" />
+
+                        <img title="Responsive sizing on every device"
+                            data-caption="Images automatically resize to fit your viewers screen, so they always look amazing."
+                            data-image="/img/srutibhavan/SrutiBhaban4.jpg" alt=""
+                            data-thumb-image="/img/srutibhavan/SrutiBhaban4.jpg?scale.height=60" />
+
+                        <img title="Responsive sizing on every device"
+                            data-caption="Images automatically resize to fit your viewers screen, so they always look amazing."
+                            data-image="/img/srutibhavan/SrutiBhaban5.jpg" alt=""
+                            data-thumb-image="/img/srutibhavan/SrutiBhaban5.jpg?scale.height=60" />
+
+                        <img title="Responsive sizing on every device"
+                            data-caption="Images automatically resize to fit your viewers screen, so they always look amazing."
+                            data-image="/img/srutibhavan/SrutiBhaban6.jpg" alt=""
+                            data-thumb-image="/img/srutibhavan/SrutiBhaban6.jpg?scale.height=60" />
+
+                        <img title="Responsive sizing on every device"
+                            data-caption="Images automatically resize to fit your viewers screen, so they always look amazing."
+                            data-image="/img/srutibhavan/SrutiBhaban7.jpg" alt=""
+                            data-thumb-image="/img/srutibhavan/SrutiBhaban7.jpg?scale.height=60" />
+
+                        <img title="Responsive sizing on every device"
+                            data-caption="Images automatically resize to fit your viewers screen, so they always look amazing."
+                            data-image="/img/srutibhavan/SrutiBhaban8.jpg" alt=""
+                            data-thumb-image="/img/srutibhavan/SrutiBhaban8.jpg?scale.height=60" />
+
+                    </div>
+                </div>
+
+                <div class="story-body">
+
+                    <div class="title-holder">
+                        <img src="/img/Logo/srutibhaban.png" style="height:100%">
+                    </div>
+
+                    <div class="story-list" type="square"><span class="bolder">রুম বুকিং: </span>৩ বেড এটাচ - ৫০০ টাকা
+                        <br>৩ বেড কমন- ২৫০ টাকা
+                    </div>
+                    <div class="story-list" type="square"><span class="bolder">যোগাযোগ : </span>+৯১ ৭০৪৭৬১০৩০০ </div>
+                    <div class="story-list" type="square"><span class="bolder">স্থান : </span>গোশালা যাবার রাস্তায়
+                    </div>
+                    <div class="story-list" type="square"><span class="bolder">দূরত্ব : </span>৫০০ মিটার মূল মন্দির থেকে
+                    </div>
+                </div>
+            </div><br>
+            <hr><br>
+
+
+        </div>
+        <br>
+        <hr class="top">
+        <br class="br">
+        <br class="br">
+        <hr class="bottom">
+        <br>
+        <section class="last-footer9329 ">
+
+            <div class="container ">
+
+                <p>@ISKCON-2021</p>
+                <p>Designer & Developer: ISKCON</p>
+                <p>ISKCON Mayapur,741313</p>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <!-- --------------------------------------------javascript start---------------------------------------- -->
+
+
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/magicslideshow.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ISKCON BANGLA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://iskconbangla.ap-1.evennode.com/socket.io/socket.io.js"></script>
+
+</head>
+
+<body>
+
+
+    <!--#####################-----------STARTING NAVBAR PART--------------#####################-->
+
+    <div class="main-container">
+        <div class="cd-main-header">
+
+
+                <div class="hamburger" aria-label="Close" data-tracking-category="Button" data-tracking-action="Click"
+                    data-tracking-label="hamburger-menu">
+                    <div class="hamburger-line"></div>
+                    <div class=" hamburger-line"></div>
+                    <div class="hamburger-line"></div>
+                </div>
+	
+
+
+
+             <!--   <img src="img/search.png" class="search-bar" alt="search bar">-->
+            <div class="todaydate">
+                শুক্রবার, ০১ অক্টোবর ২০২১
+            </div>
+
+
+
+
+
+            <div class="logo">
+                <a class="cd-logo" href="http://127.0.0.1:5500/index.html"><img src="img/iskcon-bangla-logo.jpg " alt="Logo "></a>
+            </div>
+
+              <!--  <div id="google_translate_element" class="notification"></div>-->
+   <div id="sp" class="notification"><img src="img/sp.jpg" style="width: 45px" alt="search bar"></div>
+
+
+<img src="img/tv3.png" class="tv" alt="tv">
+            
+        </div>
+
+        <hr class="top">
+
+
+        <!--#####################-----------------------END NAVBAR PART------------------#####################-->
+
+        <!--#####################-----------------------part One-------------------------#####################-->
+
+        <div class="subnav">
+            <ul>
+                <li><a href="https://www.iskconbangla.com/index.html">সংবাদ ক্ষেত্র</a></li>
+                <li><a href="https://www.iskconbangla.com/Accomodation.html">বাসস্থান</a></li>
+                <li><a href="https://www.iskconbangla.com/Prasadam.html">প্রসাদম</a></li>
+                <li><a href="https://www.iskconbangla.com/To%20do.html">কার্যকলাপ</a></li>
+                <li><a href="https://www.iskconbangla.com/Mayapur%20Tour.html">মায়াপুর ভ্রমণ</a></li>
+                <li><a href="https://www.iskconbangla.com/Temple.html">মন্দির</a></li>
+                <li><a href="https://www.iskconbangla.com/Join%20Us.html">যোগদান করুন</a></li>
+                <li><a href="https://www.iskconbangla.com/Facilities.html">সুযোগ সুবিধা</a></li>
+
+            </ul>
+            <hr class="bottom">
+        </div>
+
+
+        <div class="hamburger-container" style="display: none">
+            <div class="close-dropdown"><img src="img/fa_closewindow.png" alt="close-dropdown"></div>
+            <div class="hamburger-list"><a href="http://www.iskconbangla.com/index.html">সংবাদ ক্ষেত্র</a></div>
+            <div class="hamburger-list"><a href="http://www.iskconbangla.com/Accomodation.html">বাসস্থান</a></div>
+            <div class="hamburger-list"><a href="http://www.iskconbangla.com/Prasadam.html">প্রসাদম</a></div>
+            <div class="hamburger-list"><a href="http://www.iskconbangla.com/To%20do.html">কার্যকলাপ</a></div>
+            <div class="hamburger-list"><a href="http://www.iskconbangla.com/Mayapur%20Tour.html">মায়াপুর ভ্রমণ</a></div>
+            <div class="hamburger-list"><a href="http://www.iskconbangla.com/Temple.html">মন্দির</a></div>
+            <div class="hamburger-list"><a href="http://www.iskconbangla.com/Join%20Us.html">যোগদান করুন</a></div>
+            <div class="hamburger-list"><a href="http://www.iskconbangla.com/Facilities.html">সুযোগ সুবিধা</a></div>
+          
+        </div>
+        <!--#####################-----------BANNER-------------------------#####################-->
+        
+        <div class="head-banner">
+        </div>
+        <hr class="bottom">
+        
+ 
+        <!--#####################-----------GRID BOX-------------------------#####################-->
+
+        <div class="container1 ">
+            <div class="grid-box" id="1">
+	<div class="news-title"></div>
+	<div class="news-body-container-holder"><div class="news-body-container"><div class="news-body"></div></div></div>
+	 <div class="news-footer"></div>
+	<div class="news-click" id="news-click1"></div>
+
+            </div>
+            <div class="grid-box" id="2">
+	<div class="news-title"></div>
+	<div class="news-body-container-holder"><div class="news-body-container"><div class="news-body"></div></div></div>
+	 <div class="news-footer"></div>
+	<div class="news-click" id="news-click2"></div>
+
+            </div>
+            <div class="grid-box" id="3">
+	<div class="news-body-container-holder"><div class="news-body-container"><div class="news-body"></div></div></div>
+	<div class="news-title"></div>
+	 <div class="news-footer"></div>
+	<div class="news-click" id="news-click3"></div>
+
+            </div>
+            <div class="grid-box" id="4">
+	<div class="news-body-container-holder"><div class="news-body-container"><div class="news-body"></div></div></div>
+	<div class="news-title"></div>
+	 <div class="news-footer"></div>
+	<div class="news-click" id="news-click4"></div>
+
+            </div>
+            <div class="grid-box" id="5">
+	<div class="news-body-container-holder"><div class="news-body-container"><div class="news-body"></div></div></div>
+	<div class="news-title"></div>
+	 <div class="news-footer"></div>
+	<div class="news-click" id="news-click5"></div>
+
+            </div>
+            <div class="grid-box" id="6">
+	<div class="news-title"></div>
+	<div class="news-body-container-holder"><div class="news-body-container"><div class="news-body"></div></div></div>
+	 <div class="news-footer"></div>
+	<div class="news-click" id="news-click6"></div>
+
+            </div>
+            <div class="grid-box" id="7">
+	<div class="news-title"></div>
+	<div class="news-body-container-holder"><div class="news-body-container"><div class="news-body"></div></div></div>
+	 <div class="news-footer"></div>
+	<div class="news-click" id="news-click7"></div>
+            </div>
+            <div class="grid-box" id="8">
+	<div class="news-title"></div>
+	<div class="news-body-container-holder"><div class="news-body-container"><div class="news-body"></div></div></div>
+	 <div class="news-footer"></div>
+	<div class="news-click" id="news-click8"></div>
+
+            </div>
+            <div class="grid-box" id="9">
+	<div class="news-title"></div>
+	<div class="news-body-container-holder"><div class="news-body-container"><div class="news-body"></div></div></div>
+	 <div class="news-footer"></div>
+	<div class="news-click" id="news-click9"></div>
+
+            </div>
+            <div class="grid-box" id="10">
+	<div class="news-title"></div>
+	<div class="news-body-container-holder"><div class="news-body-container"><div class="news-body"></div></div></div>
+	 <div class="news-footer"></div>
+	<div class="news-click" id="news-click10"></div>
+
+            </div>
+            <div class="grid-box" id="11">
+	<div class="news-title"></div>
+	<div class="news-body-container-holder"><div class="news-body-container"><div class="news-body"></div></div></div>
+	 <div class="news-footer"></div>
+	<div class="news-click" id="news-click11"></div>
+
+            </div>
+            <div class="grid-box" id="12">
+	<div class="news-title"></div>
+	<div class="news-body-container-holder"><div class="news-body-container"><div class="news-body"></div></div></div>
+	 <div class="news-footer"></div>
+	<div class="news-click" id="news-click12"></div>
+
+            </div>
+
+        </div>
+<!--<div style="font-family:'UrmeeMJ Bold';font-size: 30px;">�qvnvwU</div>-->
+
+        <br>
+        <hr class="top">
+        <br class="br">
+        <br class="br">
+        <hr class="bottom">
+        <br>
+        <section class="last-footer9329 ">
+
+            <div class="container ">
+
+                <p>@ISKCON-2021</p>
+                <p>Designer & Developer: ISKCON</p>
+                <p>ISKCON Mayapur,741313</p>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js "></script>
+     <script src="js/jquery-3.1.1.min.js "></script>
+   Resource jQuery -->
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<script type="text/javascript" src="js/script.js"></script>
+
+</body>
+
+</html>

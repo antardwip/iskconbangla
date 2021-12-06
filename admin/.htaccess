@@ -1,0 +1,3 @@
+<FilesMatch "\.(html|htm|php)$">
+Header set Cache-Control "no-cache"
+</FilesMatch>

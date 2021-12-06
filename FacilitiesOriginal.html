@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>ISKCON BANGLA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://souravtest.eu-4.evennode.com/socket.io/socket.io.js"></script>
+    <link rel="stylesheet" href="css/magicslideshow.css">
+
+    <style>
+        .mySlides1 {
+            display: none;
+        }
+
+        .mySlides2 {
+            display: none;
+        }
+
+        .mySlides3 {
+            display: none;
+        }
+
+        .mySlides4 {
+            display: none;
+        }
+
+        .mySlides5 {
+            display: none;
+        }
+
+        .mySlides6 {
+            display: none;
+        }
+
+        .mySlides7 {
+            display: none;
+        }
+
+        .mySlides8 {
+            display: none;
+        }
+
+        .mySlides9 {
+            display: none;
+        }
+
+        .mySlides10 {
+            display: none;
+        }
+
+        .mySlides11 {
+            display: none;
+        }
+
+        .mySlides12 {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--#####################-----------STARTING NAVBAR PART--------------#####################-->
+
+    <div class="main-container">
+        <div class="cd-main-header">
+
+
+            <div class="hamburger" aria-label="Close" data-tracking-category="Button" data-tracking-action="Click"
+                data-tracking-label="hamburger-menu">
+                <div class="hamburger-line"></div>
+                <div class=" hamburger-line"></div>
+                <div class="hamburger-line"></div>
+            </div>
+
+
+
+
+            <img src="/img/Logo/search.png" class="search-bar" alt="search bar">
+            <div class="todaydate">
+                শুক্রবার, ০১ অক্টোবর ২০২১
+            </div>
+
+            <div class="logo">
+                <a class="cd-logo" href="http://127.0.0.1:5500/index.html"><img src="/img/Logo/iskcon-bangla-logo.png "
+                        alt="Logo "></a>
+            </div>
+
+
+            <div id="google_translate_element" class="notification"></div>
+            <img src="/img/Logo/tv3.png" class="tv" alt="tv">
+
+        </div>
+
+        <hr class="top">
+
+        <!--#####################-----------------------END NAVBAR PART------------------#####################-->
+
+        <!--#####################-----------------------part One-------------------------#####################-->
+
+        <div class="subnav">
+            <ul>
+                <li><a href="http://127.0.0.1:5500/index.html">সংবাদ ক্ষেত্র</a></li>
+                <li><a href="http://127.0.0.1:5500/Accomodation.html">বাসস্থান</a></li>
+                <li><a href="http://127.0.0.1:5500/Prasadam.html">প্রসাদম</a></li>
+                <li><a href="http://127.0.0.1:5500/To%20do.html">কার্যকলাপ</a></li>
+                <li><a href="http://127.0.0.1:5500/Mayapur%20Tour.html">মায়াপুর ভ্রমণ</a></li>
+                <li><a href="http://127.0.0.1:5500/Temple.html">মন্দির</a></li>
+                <li><a href="http://127.0.0.1:5500/Join%20Us.html">যোগদান করুন</a></li>
+                <li><a href="http://127.0.0.1:5500/Facilities.html">সুযোগ সুবিধা</a></li>
+                <li><a href="http://127.0.0.1:5500/Small%20Temples.html">ছোট মন্দির</a></li>
+            </ul>
+            <hr class="bottom">
+        </div>
+
+
+        <div class="hamburger-container" style="display: none">
+            <div class="close-dropdown"><img src="img/fa_closewindow.png" alt="close-dropdown"></div>
+            <div class="hamburger-list"><a href="http://127.0.0.1:5500/index.html">সংবাদ ক্ষেত্র</a></div>
+            <div class="hamburger-list"><a href="http://127.0.0.1:5500/Accomodation.html">বাসস্থান</a></div>
+            <div class="hamburger-list"><a href="http://127.0.0.1:5500/Prasadam.html">প্রসাদম</a></div>
+            <div class="hamburger-list"><a href="http://127.0.0.1:5500/To%20do.html">কার্যকলাপ</a></div>
+            <div class="hamburger-list"><a href="http://127.0.0.1:5500/Mayapur%20Tour.html">মায়াপুর ভ্রমণ</a></div>
+            <div class="hamburger-list"><a href="http://127.0.0.1:5500/Temple.html">মন্দির</a></div>
+            <div class="hamburger-list"><a href="http://127.0.0.1:5500/Join%20Us.html">যোগদান করুন</a></div>
+            <div class="hamburger-list"><a href="http://127.0.0.1:5500/Facilities.html">সুযোগ সুবিধা</a></div>
+            <div class="hamburger-list"><a href="http://127.0.0.1:5500/Small%20Temples.html"> ছোট মন্দির</a></div>
+
+        </div>
+        <!--#####################-----------BANNER-------------------------#####################-->
+
+        <div class="head-banner">
+        </div>
+        <hr class="bottom">
+        <br><br>
+        <!--#####################-----------NEWS----------------------------#####################-->
+        <!--#####################-----------story 1 গৌরাঙ্গ ট্র্যাভেল----------------------------#####################-->
+        <div class="news-story">
+            <div class="story-block">
+
+                <div class="story-img"> <img src="/img/GourangaTravel/GourangaTravels1.JPG" alt="gouanga travels">
+                </div>
+
+                <div class="story-body">
+
+                    <div class="title-holder">
+                        <img src="/img/Logo/gaurangatravel.png" style="height:100%">
+                    </div>
+
+                    <div class="story-list"><span class="bolder">মায়াপুর থেকে কোলকাতা আসা-যাওয়া: </span>ছোট গাড়ী, বাস
+                    </div>
+                    <div class="story-list"><span class="bolder">দর্শন: </span>গঙ্গাসাগর, তারাপীঠ, একচক্রা, হাজারদুয়ারি,
+                        শান্তিনিকেতন</div>
+                    <div class="story-list"><span class="bolder">টিকিট: </span>ট্রেন, ফ্লাইট</div>
+                    <div class="story-list"><span class="bolder">নবদ্বীপ ভ্রমণ :</span>নবদ্বীপ ধামের বিভিন্ন স্থান দর্শন
+                    </div>
+                    <div class="story-list"><span class="bolder">যোগাযোগ :</span> +৯১ ৯৫৯৩৪৭৯৯৯০</div>
+                    <div class="story-list"><span class="bolder">ইমেইল:</span>travels@gmail.com</div>
+
+
+                </div>
+            </div><br>
+            <hr><br>
+        </div>
+        <!--#####################-----------story 2 সাইবার শপ ----------------------------#####################-->
+
+        <div class="news-story">
+            <div class="story-block">
+
+                <div class="story-img"> <img src="/img/cybershop/CyberShop1.JPG" alt="cyber shop"> </div>
+
+                <div class="story-body">
+
+                    <div class="title-holder">
+                        <img src="/img/Logo/cybershop.png" style="height:100%">
+                    </div>
+
+                    <div class="story-list"><span class="bolder">সুবিধা: </span>প্রিন্টিং - সাদা-কালো ও রঙিন,
+                        email-চেকিং ও ওয়েভ ব্রাউজিং, ফটোকপি, ল্যামিনেশন ও ফ্যাক্স, ফটোকপি, ল্যামিনেশন ও ফ্যাক্স </div>
+                    <div class="story-list"><span class="bolder">যোগাযোগ :</span> ০৩৪৭২ ২৪৫২৪০, ০৩৪৭২ ২৪৫২৩৯</div>
+
+                </div>
+            </div><br>
+            <hr><br>
+        </div>
+
+        <!--#####################-----------story 3 পার্কিং----------------------------#####################-->
+
+
+        <div class="news-story">
+            <div class="story-block">
+
+                <div class="story-img"> <img src="/img/Parking/Parking1.JPG" alt="cyber shop"> </div>
+
+
+
+                <div class="story-body">
+
+                    <div class="title-holder">
+                        <img src="/img/Logo/parking.png" style="height:100%">
+                    </div>
+
+                    <div class="story-list"><span class="bolder">স্থান: </span>ইস্কন মন্দিরের প্রবেশ পথ নামহট্টের পাশে ৪
+                        নং গেট দিয়ে ।</div>
+                    <div class="story-list"><span class="bolder">মূল্য: </span>বাইক- ২০ টাকা, টোটো, অটো, মটর ভ্যান -
+                        ৫০টাকা, ছোট গাড়ি- ১০০ টাকা, বাস - ২০০ টাকা।</div>
+
+                </div>
+            </div><br>
+            <hr><br>
+        </div>
+        <!--/--------------------------------------------- story 4 কেনাকাটা--------------------------------------------------\ -->
+
+        <div class="news-story">
+            <div class="story-block">
+
+                <div class="story-img">
+                    <div class="MagicSlideshow"
+                        data-options="effect: slide-in; selectors: bottom; selectorsEye: false; pause: false; preload: false; autoplay: false; showLoader: true; autostart: false;">
+
+                        <img title="সংকীর্তন ষ্টোর" src="/img/sankirtanstore/SankirtanStore1.JPG" alt="" data-caption=""
+                            data-thumb-image="/img/sankirtanstore/SankirtanStore1.JPG?scale.height=60" />
+
+                        <img title="সিপিডি ষ্টোর" src="/img/CPDStore/cpd1.JPG" alt="" data-caption=""
+                            data-thumb-image="/img/CPDStore/cpd1.JPG?scale.height=60" />
+
+                        <img title="নামহট্ট ষ্টোর" data-caption="" src="/img/namhattastore/NamhattaStore1.JPG" alt=""
+                            data-thumb-image="/img/namhattastore/NamhattaStore1.JPG?scale.height=60" />
+
+                        <img title="গদা ষ্টোর" data-caption="" src="/img/gadastore/GadaStore1.JPG" alt=""
+                            data-thumb-image="/img/gadastore/GadaStore1.JPG?scale.height=60" />
+
+                        <img title="শ্রুতি ভবন ষ্টোর" data-caption="" src="/img/srutibhabanstore/SrutiBhabanStore1.JPG"
+                            alt="" data-thumb-image="/img/srutibhabanstore/SrutiBhabanStore1.JPG?scale.height=60" />
+
+                        <img title="গোশালা ষ্টোর" data-caption="" src="/img/goshalstore/Store6.JPG" alt=""
+                            data-thumb-image="/img/goshalstore/Store6.JPG?scale.height=60" />
+                    </div>
+                </div>
+
+                <div class="story-body">
+
+                    <div class="title-holder">
+                        <img src="/img/Logo/shopping.png" style="height:100%">
+                    </div>
+
+                    <div class="story-list">সংকীর্তন ষ্টোর, সিপিডি ষ্টোর, নামহট্ট ষ্টোর, গদা ষ্টোর, শ্রুতি ভবন ষ্টোর,
+                        গোশালা ষ্টোর, অন্যান্য ষ্টোর</div>
+
+                </div>
+            </div><br>
+            <hr><br>
+        </div>
+        <!--/--------------------------------------------- story 5 মিডিকাল শপ--------------------------------------------------\ -->
+
+        <div class="news-story">
+            <div class="story-block">
+
+                <div class="story-img"><img src="/img/medicalstore/MedicalStore1.JPG" alt="medical store"></div>
+
+                <div class="story-body">
+
+                    <div class="title-holder">
+                        <img src="/img/Logo/medicalshop.png" style="height:100%">
+                    </div>
+
+                    <div class="story-list"><span class="bolder">স্থান: </span>কন মেন গেটের পাশে।</div>
+                    <div class="story-list"><span class="bolder">সময়সূচী: </span>সকাল ৮ টা থেকে রাত ৮ টা পর্যন্ত।</div>
+
+                </div>
+            </div><br>
+            <hr><br>
+        </div>
+        <!--/--------------------------------------------- story 6 মূদ্রা বিনিময়--------------------------------------------------\ -->
+        <div class="news-story">
+            <div class="story-block">
+
+                <div class="story-img"><img src="/img/currencyexchange/CurrencyExchange1.JPG" alt=""></div>
+
+                <div class="story-body">
+
+                    <div class="title-holder">
+                        <img src="/img/Logo/moneyexchange.png" style="height:100%">
+                    </div>
+
+                    <div class="story-list"><span class="bolder">সুবিধা: </span>বৈদেশিক মূদ্রা বিনিময়, ফ্লাইট টিকিট
+                    </div>
+                    <div class="story-list"><span class="bolder">স্থান: </span>চক্র ভবন, রুম নং -</div>
+
+                </div>
+            </div><br>
+            <hr><br>
+        </div>
+        <!--/--------------------------------------------- story 7 এটিএম--------------------------------------------------\ -->
+        <div class="news-story">
+            <div class="story-block">
+
+                <div class="story-img">
+                    <div class="MagicSlideshow"
+                        data-options="effect: slide-in; selectors: bottom; selectorsEye: false; pause: false; preload: false; autoplay: false; showLoader: true; autostart: false;">
+                        <img title="Axis" src="/img/ATM/atm1.JPG" alt="axis" data-caption=""
+                            data-thumb-image="/img/ATM/atm1.JPG?scale.height=60" />
+
+                        <img title="SBI" src="/img/ATM/atm2.jpg" alt="" data-caption=""
+                            data-thumb-image="/img/ATM/atm2.jpg?scale.height=60" />
+
+                        <img title="HDFC" data-caption="" src="/img/ATM/atm3.JPG" alt=""
+                            data-thumb-image="/img/ATM/atm3.JPG?scale.height=60" />
+
+                        <img title="HDFC" data-caption="" src="/img/ATM/atm4.JPG" alt=""
+                            data-thumb-image="/img/ATM/atm3.JPG?scale.height=60" />
+
+                    </div>
+                </div>
+
+                <div class="story-body">
+
+                    <div class="title-holder">
+                        <img src="/img/Logo/atm.png" style="height:100%">
+                    </div>
+
+                    <div class="story-list"><span class="bolder">স্থান: </span>ICICI ব্যাংক - স্থান - ঈশ্বোদ্যান ভবন, Axis ব্যাংক- স্থান - চক্র ভবন, HDFC
+                        ব্যাঙ্ক স্থান - চক্র ভবন, SBI ব্যাংক স্থান - পুলিশ ফাঁড়ির পাশে</div>
+
+                </div>
+            </div><br>
+            <hr><br>
+        </div>
+        <!--/--------------------------------------------- story 8 অভ্যন্তরীণ পরিবহন--------------------------------------------------\ -->
+        <div class="news-story">
+            <div class="story-block">
+
+                <div class="story-img">
+                    <div class="MagicSlideshow"
+                        data-options="effect: slide-in; selectors: bottom; caption:false; selectorsEye: false; pause: false; preload: false; autoplay: false; showLoader: true; autostart: false;">
+                        <img title="Touch, tap, swipe" src="/img/internaltransport/InternalTransport1.JPG" alt=""
+                            data-caption="Natural touchscreen experience - visitors intuitively feel at ease with your slideshows."
+                            data-thumb-image="/img/internaltransport/InternalTransport1.JPG?scale.height=60" />
+
+                        <img title="Maximum engagement" src="/img/internaltransport/InternalTransport2.jpg" alt=""
+                            data-caption="Works beautifully out-of-the-box or optimize 30 popular settings to meet your requirements."
+                            data-thumb-image="/img/internaltransport/InternalTransport2.jpg?scale.height=60" />
+
+                    </div>
+                </div>
+
+                <div class="story-body">
+
+                    <div class="title-holder">
+                        <img src="/img/Logo/transport.png" style="height:100%">
+                    </div>
+
+                    <div class="story-list"><span class="bolder">স্থান: </span></div>
+
+                </div>
+
+            </div><br>
+            <hr><br>
+        </div>
+        <!--/---------------------------------------------story 9 পানীয় জল--------------------------------------------------\-->
+
+        <div class="news-story">
+            <div class="story-block">
+
+                <div class="story-img">
+                    <div class="MagicSlideshow"
+                        data-options="effect: slide-in; selectors: bottom; caption:false; selectorsEye: false; pause: false; preload: false; autoplay: false; showLoader: true; autostart: false;">
+                        <img title="Touch, tap, swipe" src="/img/drinkingwater/DrinkingWater1.JPG" alt=""
+                            data-caption="Natural touchscreen experience - visitors intuitively feel at ease with your slideshows."
+                            data-thumb-image="/img/drinkingwater/DrinkingWater1.JPG?scale.height=60" />
+
+                        <img title="Maximum engagement" src="/img/drinkingwater/DrinkingWater2.JPG" alt=""
+                            data-caption="Works beautifully out-of-the-box or optimize 30 popular settings to meet your requirements."
+                            data-thumb-image="/img/drinkingwater/DrinkingWater2.JPG?scale.height=60" />
+
+                        <img title="Ken Burns gorgeousness"
+                            data-caption="Enable the popular zoom/pan/fade Ken Burns effect - like the one you see on this demo."
+                            src="/img/drinkingwater/DrinkingWater3.JPG" alt=""
+                            data-thumb-image="/img/drinkingwater/DrinkingWater3.JPG?scale.height=60" />
+
+                        <img title="Ken Burns gorgeousness"
+                            data-caption="Enable the popular zoom/pan/fade Ken Burns effect - like the one you see on this demo."
+                            src="/img/drinkingwater/DrinkingWater4.jpg" alt=""
+                            data-thumb-image="/img/drinkingwater/DrinkingWater4.jpg?scale.height=60" />
+
+                        <img title="Ken Burns gorgeousness"
+                            data-caption="Enable the popular zoom/pan/fade Ken Burns effect - like the one you see on this demo."
+                            src="/img/drinkingwater/DrinkingWater5.jpg" alt=""
+                            data-thumb-image="/img/drinkingwater/DrinkingWater5.jpg?scale.height=60" />
+                    </div>
+                </div>
+
+                <div class="story-body">
+
+                    <div class="title-holder">
+                        <img src="/img/Logo/drinkingwater.png" style="height:100%">
+                    </div>
+
+                    <div class="story-list"><span class="bolder">সুবিধা: </span>চক্র ভবনের সামনে, চক্র ভবনের পিছনে,
+                        মায়াপুর চন্দ্রোদয় মন্দিরে, সমাধি মন্দিরের সামনে, গৌরাঙ্গ কুটিরের পিছনে</div>
+
+                </div>
+            </div><br>
+            <hr><br>
+        </div>
+
+        <!--/---------------------------------------------story 10 টয়লেট--------------------------------------------------\-->
+
+        <div class="news-story">
+            <div class="story-block">
+
+                <div class="story-img">
+                    <div class="MagicSlideshow"
+                        data-options="effect: slide-in; selectors: bottom; caption:false; selectorsEye: false; pause: false; preload: false; autoplay: false; showLoader: true; autostart: false;">
+                        <img title="Touch, tap, swipe" src="/img/Toitlet/Toilet2.JPG" alt=""
+                            data-caption="Natural touchscreen experience - visitors intuitively feel at ease with your slideshows."
+                            data-thumb-image="/img/Toitlet/Toilet1.png?scale.height=60" />
+
+                        <img title="Maximum engagement" src="/img/Toitlet/Toilet1.png" alt=""
+                            data-caption="Works beautifully out-of-the-box or optimize 30 popular settings to meet your requirements."
+                            data-thumb-image="/img/Toitlet/Toilet2.JPG?scale.height=60" />
+
+
+                    </div>
+                </div>
+
+                <div class="story-body">
+
+                    <div class="title-holder">
+                        <img src="/img/Logo/toilet.png" style="height:100%" >
+                    </div>
+
+                    <div class="story-list"><span class="bolder"> স্থান: </span>বাস পার্কিং, গোবিন্দাস রেস্টুরেন্টের
+                        পাশে, শ্রীল প্রভুপাদ পূষ্পসমাধির সামনে, সমাধি মন্দিরের সামনে</div>
+
+                </div>
+            </div><br>
+            <hr><br>
+        </div>
+
+
+        <br>
+        <hr class="top">
+        <br class="br">
+        <br class="br">
+        <hr class="bottom">
+        <br>
+        <section class="last-footer9329 ">
+
+            <div class="container ">
+
+                <p>@ISKCON-2021</p>
+                <p>Designer & Developer: ISKCON</p>
+                <p>ISKCON Mayapur,741313</p>
+
+            </div>
+
+        </section>
+
+
+    </div>
+
+
+
+
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/magicslideshow.js"></script>
+
+    <script>
+        var slideIndex = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
+        var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4", "mySlides5", "mySlides6", "mySlides7", "mySlides8", "mySlides9", "mySlides10", "mySlides11", "mySlides12"];
+        showDivs(1, 0);
+        showDivs(1, 1);
+        showDivs(1, 2);
+        showDivs(1, 3);
+        showDivs(1, 4);
+        showDivs(1, 5);
+        showDivs(1, 6);
+        showDivs(1, 7);
+        showDivs(1, 8);
+        showDivs(1, 9);
+        showDivs(1, 10);
+        showDivs(1, 11);
+
+        function plusDivs(n, no) {
+            showDivs(slideIndex[no] += n, no);
+        }
+
+        function showDivs(n, no) {
+            var i;
+            var x = document.getElementsByClassName(slideId[no]);
+            if (n > x.length) { slideIndex[no] = 1 }
+            if (n < 1) { slideIndex[no] = x.length }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex[no] - 1].style.display = "block";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>ISKCON BANGLA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://souravtest.eu-4.evennode.com/socket.io/socket.io.js"></script>
+    <link rel="stylesheet" href="css/magicslideshow.css">
+
+</head>
+
+<body>
+
+    <!--#####################-----------STARTING NAVBAR PART--------------#####################-->
+
+    <div class="main-container">
+        <div class="cd-main-header">
+
+
+            <div class="hamburger" aria-label="Close" data-tracking-category="Button" data-tracking-action="Click"
+                data-tracking-label="hamburger-menu">
+                <div class="hamburger-line"></div>
+                <div class=" hamburger-line"></div>
+                <div class="hamburger-line"></div>
+            </div>
+
+
+
+
+            <!--   <img src="img/search.png" class="search-bar" alt="search bar">-->
+            <div class="todaydate">
+            </div>
+
+
+
+
+
+            <div class="logo">
+                <a class="cd-logo" href="https://www.iskconbangla.com/index.html"><img src="img/iskcon-bangla-logo.jpg "
+                        alt="Logo "></a>
+            </div>
+
+            <!--  <div id="google_translate_element" class="notification"></div>-->
+            <div id="sp" class="notification"><a href="https://www.iskconbangla.com/Prabhupada.html"><img
+                        src="img/sp.jpg" style="width: 45px" alt="search bar"></a></div>
+
+
+            <a href="https://www.iskconbangla.com/tv.html"><img src="img/tv3.png" class="tv" alt="tv"></a>
+
+        </div>
+
+        <hr class="top">
+    </div>
+
+    <!--#####################-----------------------END NAVBAR PART------------------#####################-->
+
+    <!--#####################-----------------------part One-------------------------#####################-->
+    <div class="subnav">
+        <div style="" )>
+            <div style="width: 80px"><a href="https://www.iskconbangla.com/index.html">সংবাদ ক্ষেত্র</a></div>
+            <div class="dropdown" style="width: 100px">
+                <button class="dropbtn">মায়াপুর ভ্রমন</button>
+
+                <div class="dropdown-content">
+                    <a href="https://www.iskconbangla.com/Accomodation.html">বাসস্থান</a>
+                    <a href="https://www.iskconbangla.com/Prasadam.html">প্রসাদম</a>
+                    <a href="https://www.iskconbangla.com/Todo.html">কার্যকলাপ</a>
+                    <a href="https://www.iskconbangla.com/Facilities.html">সুযোগ সুবিধা</a>
+                    <a href="https://www.iskconbangla.com/Temple.html">মন্দির</a>
+                    <a href="https://www.iskconbangla.com/MayapurTour.html">মায়াপুর ভ্রমণ</a>
+                </div>
+            </div>
+            <!--<li><a href="https://www.iskconbangla.com/Accomodation.html">বাসস্থান</a></li>
+                <li><a href="https://www.iskconbangla.com/Prasadam.html">প্রসাদম</a></li>
+                <li><a href="https://www.iskconbangla.com/Todo.html">কার্যকলাপ</a></li>
+                <li><a href="https://www.iskconbangla.com/MayapurTour.html">মায়াপুর ভ্রমণ</a></li>
+                <div style="width: 40px"><a href="https://www.iskconbangla.com/Temple.html">মন্দির</a></div>-->
+            <div style="width: 95px"><a href="https://www.iskconbangla.com/JoinUs.html">যোগদান করুন</a></div>
+            <div style="width: 90px"><a href="https://www.iskconbangla.com/bengalitemples.html">মন্দির</a></div>
+            <div style="width: 90px"><a href="https://www.iskconbangla.com/tv.html">মায়াপুর টিভি</a></div>
+            <div style="width: 90px"><a href="https://www.iskconbangla.com/bookshop.html">বইের দোকান</a></div>
+            <div style="width: 65px"><a href="https://www.iskconbangla.com/Prabhupada.html">প্রভুপাদ</a></div>
+        </div>
+        <hr class="bottom">
+    </div>
+
+    <div class="main-container">
+        <div class="hamburger-container" style="display: none">
+            <div class="close-dropdown"><img src="img/fa_closewindow.png" alt="close-dropdown"></div>
+            <div class="hamburger-list"><a href="https://www.iskconbangla.com/index.html">সংবাদ ক্ষেত্র</a></div>
+            <div class="hamburger-list"><a href="https://www.iskconbangla.com/Accomodation.html">বাসস্থান</a></div>
+            <div class="hamburger-list"><a href="https://www.iskconbangla.com/Prasadam.html">প্রসাদম</a></div>
+            <div class="hamburger-list"><a href="https://www.iskconbangla.com/Todo.html">কার্যকলাপ</a></div>
+            <div class="hamburger-list"><a href="https://www.iskconbangla.com/MayapurTour.html">মায়াপুর ভ্রমণ</a></div>
+            <div class="hamburger-list"><a href="https://www.iskconbangla.com/Temple.html">মন্দির</a></div>
+            <div class="hamburger-list"><a href="https://www.iskconbangla.com/JoinUs.html">যোগদান করুন</a></div>
+            <div class="hamburger-list"><a href="https://www.iskconbangla.com/Facilities.html">সুযোগ সুবিধা</a></div>
+            <div class="hamburger-list"><a href="https://www.iskconbangla.com/SmallTemples.html"> ছোট মন্দির</a></div>
+
+        </div>
+        <!--#####################-----------BANNER-------------------------#####################-->
+
+        <div class="head-banner">
+        </div>
+
+        <hr class="bottom">
+
+        <!--#####################-----------NEWS----------------------------#####################-->
+    <!-- /-----------------------------------------------story 1------------------------------------------------------\ -->
+    <br><br>
+    <div class="news-story">
+        <div class="story-block">
+
+            <div class="story-img">
+                <!-- <div class="w3-content w3-display-container">
+
+                        <div class="w3-display-container mySlides1">
+                            <img src="/img/bus stand 1.jpg" style="width:100%">
+
+                        </div>
+
+                        <div class="w3-display-container mySlides1">
+                            <img src="/img/TOVP 2.jpg" style="width:100%">
+
+                        </div>
+
+                        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 0)">&#10094;</button>
+                        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 0)">&#10095;</button>
+
+                    </div> -->
+                <img src="/img/Bustand/BusStand1.jpg" alt="">
+
+            </div>
+
+            <div class="story-body">
+
+                <div class="title-holder">
+                    <img src="/img/Logo/travelkolkata.png" style="height:100%">
+                </div>
+
+                <div class="story-list"><span class="bolder">সময়সূচি: </span>কোলকাতা থেকে মায়াপুর ক্যাম্পাসে বাসে
+                    আসতে হলে ধর্মতলা থেকে সকাল ৬ টায় ও দুপুর ৩ টায় বাস
+                    ছাড়ে। মায়াপুর ক্যাম্পাস থেকেও কোলকাতায় আসার জন্য একি সময়ে বাস ছাড়ে।</div>
+                <div class="story-list"><span class="bolder">মাধ্যম: </span>আপনারা যে কোন বাসে মায়াপুর আসতে হলে
+                    বহরমপুর, মালদা বা উত্তরবঙ্গের বাসে করে ধুবুলিয়াতে
+                    (চৌগাছা) নামতে হবে। তারপর বাসে করে বা টোটো করে মায়াপুর ইসকন মন্দিরের মেনগেট বা নামহট্ট গেটে
+                    নামতে পারেন অথবা কৃষ্ণনগর থেকে অটো করে মায়াপুরঘাটে আসবেন নৌকা করে গঙ্গা পার হয়ে টোটো করে
+                    মায়াপুর মেনগেটে আসটে পারবেন।</div>
+                <div class="story-list"><span class="bolder">যোগাযোগ :</span> ০৩৪৭২ ২৪৫৩৮৫, +৯১ ৯৪৩৪১৭৩৪৬৬</div>
+
+            </div>
+
+        </div><br>
+        <hr><br>
+    </div>
+
+    <!-- /-----------------------------------------------story 2------------------------------------------------------\ -->
+
+    <div class="news-story">
+        <div class="story-block">
+
+            <div class="story-img">
+                <!-- <div class="w3-content w3-display-container">
+
+                        <div class="w3-display-container mySlides2">
+                            <img src="/img/krishnagar station 1.jpg" style="width:100%">
+
+                        </div>
+
+                        <div class="w3-display-container mySlides2">
+                            <img src="/img/TOVP 2.jpg" style="width:100%">
+
+                        </div>
+
+                        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 1)">&#10094;</button>
+                        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 1)">&#10095;</button>
+
+                    </div> -->
+                <img src="/img/krishnagarrailwaystation/KrishnagarStation1.jpg" alt="">
+            </div>
+
+            <div class="story-body">
+
+                <div class="title-holder">
+                    <img src="/img/Logo/travelkrishnanagar.png" style="height:100%">
+                </div>
+
+                <div class="story-list"><span class="bolder">কিভাবে আসবেন: </span>শিয়ালদা থেকে ট্রেনে করে মায়াপুর
+                    আসতে হলে কৃষ্ণনগর লোকাল ট্রেন ধরে কৃষ্ণনগর ষ্টেশন নামতে হবে তারপর অটো করে মায়াপুরঘাটে আসতে হবে
+                    তারপর গঙ্গা পার হয়ে টোটো করে মায়াপুর মেনগেটে আসটে পারবেন।
+                </div>
+            </div>
+        </div>
+    </div><br>
+    <hr><br>
+    </div>
+
+    <!-- /-----------------------------------------------story 3------------------------------------------------------\ -->
+
+    <div class="news-story">
+        <div class="story-block">
+
+            <div class="story-img">
+                <!-- <div class="w3-content w3-display-container">
+
+                    <div class="w3-display-container mySlides3">
+                        <img src="/img/nabadwip station 1.jpg" style="width:100%">
+
+                    </div>
+
+                    <div class="w3-display-container mySlides3">
+                        <img src="/img/TOVP 2.jpg" style="width:100%">
+
+                    </div>
+
+                    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 2)">&#10094;</button>
+                    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 2)">&#10095;</button>
+
+                </div> -->
+                <img src="/img/nabadwiprailwaystation/NabadwipStation1.jpg" alt="">
+            </div>
+
+            <div class="story-body">
+
+
+                <div class="title-holder">
+                    <img src="/img/Logo/travelnavadwip.png" style="height:100%">
+                </div>
+
+                <div class="story-list"><span class="bolder">কিভাবে আসবেন: </span>হাউড়া থেকে ট্রেনে করে মায়াপুর আসতে হলে
+                    কাটোয়া লোকাল ট্রেন ধরে নবদ্বীপ ধাম ষ্টেশন নামতে হবে তারপর
+                    টোটো করে বড়ালঘাটে আসতে হবে তারপর গঙ্গা পার হয়ে টোটো করে মায়াপুর মেনগেটে আসটে পারবেন।
+                </div>
+            </div>
+        </div><br>
+        <hr><br>
+    </div>
+
+    <!-- /-----------------------------------------------story 4------------------------------------------------------\ -->
+
+    <div class="news-story">
+        <div class="story-block">
+
+            <div class="story-img">
+                <!-- <div class="w3-content w3-display-container">
+
+                    <div class="w3-display-container mySlides4">
+                        <img src="/img/esplanade 1.jpg" style="width:100%">
+
+                    </div>
+
+                    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 3)">&#10094;</button>
+                    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 3)">&#10095;</button>
+
+                </div> -->
+                <img src="/img/esplanedbustand/EsplanedBustand.jpg" alt="">
+            </div>
+
+            <div class="story-body">
+
+                <div class="title-holder">
+                    <img src="/img/Logo/traveldharmtala.png" style="height:100%">
+                </div>
+
+                <div class="story-list"><span class="bolder">কিভাবে আসবেন: </span>আপনারা যে কোন বাসে মায়াপুর আসতে হলে
+                    বহরমপুর, মালদা বা উত্তরবঙ্গের বসে করে ধুবুলিয়াতে (চৌগাছা)
+                    নামতে হবে। তারপর বাসে করে বা টোটো করে মায়াপুর ইসকন মন্দিরের মেনগেট বা নামহট্ট গেটে নামতে পারেন
+                    অথবা কৃষ্ণনগর থেকে অটো করে মায়াপুরঘাটে আসবেন নৌকা করে গঙ্গা পার হয়ে টোটো করে মায়াপুর মেনগেটে
+                    আসটে পারবেন।
+                </div>
+            </div>
+        </div><br>
+        <hr><br>
+    </div>
+    <br>
+    <hr class="top">
+    <br class="br">
+    <br class="br">
+    <hr class="bottom">
+    <br>
+    <section class="last-footer9329 ">
+
+        <div class="container ">
+
+            <p>@ISKCON-2021</p>
+            <p>Designer & Developer: ISKCON</p>
+            <p>ISKCON Mayapur,741313</p>
+
+        </div>
+
+    </section>
+
+    </div>
+
+    <!-- ---------------------------------------------------------javascript start---------------------------------------- -->
+
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/magicslideshow.js"></script>
+
+</body>
+
+</html>
